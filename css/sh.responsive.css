@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .property__links__container{
+        margin-bottom: 30px;
+    }
+
+    .add__property__link .link__number {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .add__property__link h3 {
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+}
+
+@media (max-width: 425px) {
+    .property__desc form input[type="submit"] {
+        height: 50px;
+        width: 179px;
+    }
+}

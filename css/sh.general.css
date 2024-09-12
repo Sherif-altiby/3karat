@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+:root {
+  --primary1: #52b694;
+  --primary2: #0e202c;
+  --gray: #8d8f95;
+  --primary6: #ededed;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  outline: none ;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  outline: none;
+}
+
+textarea{
+    resize: none;
+    outline: none;
+}
+
+.main-container {
+  width: 90%;
+  margin: auto;
+}
+
+.custom__shadow {
+  box-shadow: 0 0 28px var(--box-shadow-color);
+}
+
+.custom__radius {
+  border-radius: 25px;
+}
+
+.active {
+  color: var(--primary1);
+}
+
+
+
+.frm__btn{
+    background-color: var(--primary1);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 250px;
+    border: 2px solid var(--primary1);
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.frm__btn::before{
+    content: '';
+    position: absolute;
+    width:0px;
+    height: 600px;
+    background-color: white;
+    top: -200px;
+    right: 60%;
+    transform: translateX(-60%) rotate(45deg);
+    transition: 1s;
+}
+
+.frm__btn::after{
+    content: '';
+    position: absolute;
+    width:0px;
+    height: 600px;
+    background-color:white;
+    top: -200px;
+    left: 40%;
+    transform: translateX( -40%) rotate(45deg);
+    transition: 1s;
+
+}
+
+.frm__btn p{
+    margin: 0;
+    transition: 1s;
+    color: #fff !important;
+}
+
+.frm__btn:hover p{
+    color: var(--primary1) !important;
+    position: relative;
+}
+
+.frm__btn:hover::after,
+.frm__btn:hover::before{
+    width: 150%;
+}
+
+.frm__btn p{
+    z-index: 9;
+}
