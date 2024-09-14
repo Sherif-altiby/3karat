@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- bootstrap icons -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+     <!-- css -->
+      <link rel="stylesheet" href="css/sh.general.css">
+      <link rel="stylesheet" href="css/sh.css">
+      <link rel="stylesheet" href="css/sh.responsive.css">
+
+</head>
+<body>
+    
+
+    <section class="add__property">
+          <div class="main-container">
+              <div class="row">
+                  <div class="col-12 col-md-4">
+                      <div class="custom__shadow custom__radius property__links__container">
+                           <div class="add__property__link">
+                               <a  href="/property-desc.html">
+                                    <div class="link__number"> 1 </div>
+                                    <div class="link__text">
+                                          <h3>  وصف  العقار </h3>
+                                          <p>  أدخل وصف عقارك  </p>
+                                    </div>
+                               </a>
+                           </div>
+                           <div class="add__property__link">
+                               <a   href="/property-title.html">
+                                    <div class="link__number"> 2 </div>
+                                    <div class="link__text">
+                                          <h3> العنوان</h3>
+                                          <p> ادخل عنوان العقار </p>
+                                    </div>
+                               </a>
+                           </div>
+                           <div class="add__property__link">
+                               <a href="/property-img.html">
+                                    <div class="link__number"> 3 </div>
+                                    <div class="link__text">
+                                          <h3>  صور العقار </h3>
+                                          <p> ادخل صور العقار </p>
+                                    </div>
+                               </a>
+                           </div>
+                           <div class="add__property__link">
+                               <a class="active" href="/ministry-permtions.html">
+                                    <div  class="link__number"> 4 </div>
+                                    <div class="link__text">
+                                          <h3>  شروط الإيجار </h3>
+                                          <p> أضف شروط الايجار </p>
+                                    </div>
+                               </a>
+                           </div>
+                           <div class="add__property__link">
+                               <a href="/rental-terms.html">
+                                    <div class="link__number"> 5 </div>
+                                    <div class="link__text">
+                                          <h3>  تصريح وزارة السياحة </h3>
+                                          <p> أضف تصريح وزارة السياحة </p>
+                                    </div>
+                               </a>
+                           </div>
+                           <div class="add__property__link">
+                               <a href="/advertise-confirm">
+                                    <div class="link__number"> 6 </div>
+                                    <div class="link__text">
+                                          <h3>  تأكيد الاعلان </h3>
+                                          <p> التأكد من بيانات العقار</p>
+                                    </div>
+                               </a>
+                           </div>
+                      </div>
+                   </div>
+                   <div class="col-12 col-md-8">
+                      <div class="custom__shadow custom__radius property__desc" >
+                        <div class="property__desc__header">
+                            <h2> شروط الايجار </h2>
+                            <p>  أضف شروط الايجار </p>
+                        </div>
+                        
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label for="type"> وقت الوصول </label>
+                                    <div class="input">
+                                        <input class="timeInput" type="time" placeholder=" حدد ساعة الوصول ">
+                                        <span class="time-placeholder">  حدد ساعة الوصول   </span>
+                                        <div class="icon"> <img src="./images/time-img.png" alt=""> </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="type"> وقت المغادرة </label>
+                                    <div class="input">
+                                     <input class="timeInput" type="time" placeholder=" حدد ساعة المغادرة ">
+                                     <span class="time-placeholder">حدد ساعة المغادرة</span>
+                                        <div class="icon"> <img src="./images/time-img.png" alt=""> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label for="type"> مبلغ التأمين </label>
+                                    <div class="input">
+                                        <input type="text" placeholder=" حدد مبلغ التأمين ">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="type">  سعر الايجار  </label>
+                                    <div class="input">
+                                     <input type="text" placeholder=" حدد السعر مقابل الليلة أو الشهر ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                 <div class="col-12">
+                                    <label for="type"> تصريح وازرة السياحة </label>
+                                    <div class="input">
+                                        <input type="file" id="inputpermission" placeholder=" أضف تصريح وزارة السياحة ">
+                                        <div class="icon"> <img src="./images/upload-file.png" alt=""> </div>
+                                        <span class="file-placeholder" > أضف تصريح وزارة السياحة  </span>
+                                    </div>
+                                 </div>
+                           
+                                 <div class="col-12">
+                                    <label for="type"> سياسة الإلغاء و الإسترجاع </label>
+                                    <div class="input">
+                                         <select name="" id="type">
+                                             <option value="1"> ما المدة المسموح بها لإلغاء الحجز أو تأجيله مجانا </option>
+                                             <option value="1"> ما المدة المسموح بها لإلغاء الحجز أو تأجيله مجانا </option>
+                                             <option value="1"> ما المدة المسموح بها لإلغاء الحجز أو تأجيله مجانا </option>
+                                         </select>
+                                        <div class="icon">  <i class="fa-solid fa-angle-down"></i>  </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="col-12">
+                                    <label for="type"> سياسة الإلغاء و الإسترجاع </label>
+                                    <div class="input">
+                                         <select name="" id="type">
+                                             <option value="1"> ما المدة المسموح بها لإلغاء الحجز أو تأجيله مجانا </option>
+                                             <option value="1"> ما المدة المسموح بها لإلغاء الحجز أو تأجيله مجانا </option>
+                                             <option value="1"> ما المدة المسموح بها لإلغاء الحجز أو تأجيله مجانا </option>
+                                         </select>
+                                        <div class="icon">  <i class="fa-solid fa-angle-down"></i>  </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="col-12">
+                                    <div class="desc__input">
+                                        <label for="desc">  اضف شروط الحجز </label>
+                                        <textarea name="text" id="desc">مثال : شقة مفروشة للايجار - مساحة ٢٨٠ متر - ٣ غرف - ٣ حمامات - صالة ٤ قطع - بلكونة - تطل على حديقة ( ميدان أسوان ) - العمارة جديدة
+                                        </textarea>
+                                     </div>
+                                 </div>
+                                 
+                            </div>
+                            <button type="submit" class="frm__btn" > <p> التالي </p> </button>
+                      </form>
+                      </div>
+                   </div>
+              </div>
+          </div>
+    </section>
+
+   <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/sh.js"></script>
+</body>
+</html>
