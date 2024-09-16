@@ -1,3 +1,10 @@
+AOS.init(
+  {
+    once: true
+  }
+);
+
+
 //  user image change
 const fileInputs = document.querySelectorAll(
     ".upload__img__container .add__photo input"
@@ -53,15 +60,26 @@ const fileInputs = document.querySelectorAll(
     })
   }
 
+
   // user upload permission file
   const inputFile = document.getElementById("inputpermission");
   const inputFilePlaceHolder = document.querySelector('.file-placeholder');
+  const fileNameTetx = document.querySelector('.file__name');
+  const fileSize = document.querySelector('.file__size');
 
   if(inputFile){
     inputFile.addEventListener("change", (e) => {
       const fileName = e.target.files[0]?.name;  
+      const size = e.target.files[0]?.size;  
       if (fileName) {
-        inputFilePlaceHolder.textContent = fileName;
+        if(inputFilePlaceHolder){
+          inputFilePlaceHolder.textContent = fileName;
+        } 
+
+        if(fileNameTetx){
+          fileNameTetx.textContent = fileName;
+          fileSize.textContent = `${(size / (1024 * 1024)).toFixed(2)} MB`;
+        }
       }
     })
   }

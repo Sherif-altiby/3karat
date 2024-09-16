@@ -124,3 +124,16 @@ textarea{
 .frm__btn p{
     z-index: 9;
 }
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.modal.custom__modal{
+  --bs-modal-width: 950px;
+}
+
+.modal.custom__modal .modal-header{
+  border: none;
+}

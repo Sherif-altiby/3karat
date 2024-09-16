@@ -104,45 +104,30 @@
           <div class="col-12 col-md-8">
             <div class="custom__shadow custom__radius property__desc">
               <div class="property__desc__header">
-                <h2>عنوان العقار</h2>
-                <p>ادخل عنوان عقارك</p>
+                <h2>  تصريح وزارة السياحة  </h2>
+                <p> الرجاء إضافة تصريح وزارة السياحة لإتمام عملية الإعلان </p>
               </div>
-              <form action="">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <label for="type"> المدينة </label>
-                    <div class="input">
-                      <input type="text" placeholder="اضف المدينة " />
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="type"> العنوان </label>
-                    <div class="input">
-                      <input type="text" placeholder=" عنوان العقار " />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <label for="type"> معالم مميزة </label>
-                    <div class="input">
-                      <input type="text" placeholder="معالم مميزة حول العقار" />
-                    </div>
-                  </div>
-                </div>
+              <form action="">                
 
-                <div class="google__map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  >
-                  </iframe>
-                </div>
+              <div class="row">
+                 <div class="col-12">
+                      <div class="upload__permitions__rental">
+                           <input id="inputpermission" type="file">
+                            <label for="inputpermission"> <img src="./images/upload.png" alt="upload"> </label>
+                            <p> رفع تصريح السكن (بصيغة PDF أو صورة) </p>
+                      </div>
+                 </div>
+                 <div class="col-12">
+                      <div class="uploaded__file__name">
+                           <label for="inputpermission"> <img src="./images/upload.png" alt=""> </label>
+                           <div class="progress__container">
+                              <div class="file__name"> اسم الملف.pdf </div>
+                              <div class="progress__file"></div>
+                              <div class="file__size"> 20mg </div>
+                           </div>
+                      </div>
+                 </div>
+              </div>
 
                 <button type="submit" class="frm__btn"><p>التالي</p></button>
               </form>
