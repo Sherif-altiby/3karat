@@ -1,0 +1,224 @@
+.footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 90px 0 0;
+  z-index: 1;
+  position: relative;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: var(--color-Primary1);
+  opacity: 0.88;
+}
+
+.img-element-footer {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.img-element-footer img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.text-element-footer {
+  width: calc(100% - 55px);
+}
+.sub-footer p {
+  color: var(--color-white);
+  margin: 35px 0;
+}
+
+.sub-footer .sco-media li a {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+
+.element-footer h2 {
+  font-size: 22px;
+  font-family: "font_medium";
+  color: var(--color-white);
+  margin-bottom: 25px;
+}
+.element-footer ul li a {
+  padding: 10px 0;
+  color: var(--color-white);
+  font-size: 17px;
+  font-family: "font_medium";
+  gap: 10px;
+  align-items: center;
+  transition: all 0.3s linear;
+
+  display: flex;
+}
+.element-footer ul li a:hover {
+  color: var(--color-Primary2);
+}
+.end-page a,
+.end-page p {
+  color: var(--color-white);
+  font-size: 18px;
+}
+.end-page {
+  background-color: var(--color-Primary1);
+  margin-top: 55px;
+  padding: 15px 0;
+}
+.end-page .main-container > a i {
+  font-size: 19px;
+  display: inline-block;
+  margin: 0 3px;
+  vertical-align: middle;
+  color: #da0606;
+}
+.end-page .main-container > a:hover {
+  color: var(--color-Primary3);
+}
+.end-page .main-container {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.soc-media ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.soc-media ul li a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  justify-content: center;
+  background-color: var(--color-Primary2);
+  font-size: 16px;
+}
+.soc-media ul li a:hover {
+  background-color: var(--color-Primary3);
+}
+
+.remove-mune {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.remove-mune span {
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: all 0.2s linear;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(0deg);
+
+  transition-delay: 0.8s;
+}
+
+.remove-mune span::after {
+  content: "";
+  height: 2px;
+  background-color: #54595f;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  transition: all 0.6s linear;
+}
+
+.remove-mune span::before {
+  content: "";
+  height: 2px;
+  background-color: #54595f;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  transition: all 0.2s linear;
+
+  transition-delay: 0.6s;
+}
+
+.menu_responsive.active .remove-mune span::before {
+  transform: rotate(90deg) translateY(-50%);
+}
+
+.menu_responsive.active .remove-mune span {
+  transform: rotate(45deg);
+}
+
+.element_menu_responsive ul li {
+  transform: translateY(100%);
+  transition: all 0.2s linear;
+  transition-delay: 0.4s;
+  display: block;
+  opacity: 0;
+}
+.menu_responsive {
+  transition-delay: 1s;
+}
+.menu_responsive.active {
+  transition-delay: 0.3s;
+}
+
+.menu_responsive.active .element_menu_responsive ul li {
+  transform: translateY(0%);
+}
+
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(1) {
+  transition-delay: 0.4s;
+  opacity: 1;
+}
+
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(2) {
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(3) {
+  transition-delay: 0.8s;
+  opacity: 1;
+}
+
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(4) {
+  transition-delay: 1s;
+  opacity: 1;
+}
+
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(5) {
+  transition-delay: 1.2s;
+  opacity: 1;
+}
+
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(6) {
+  transition-delay: 1.4s;
+  opacity: 1;
+}
+
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(7) {
+  transition-delay: 1.6s;
+  opacity: 1;
+}
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(8) {
+  transition-delay: 1.8s;
+  opacity: 1;
+}
+.menu_responsive.active .element_menu_responsive ul li:nth-of-type(9) {
+  transition-delay: 2s;
+  opacity: 1;
+}

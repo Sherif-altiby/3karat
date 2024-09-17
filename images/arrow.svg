@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="927.549" height="152.395" viewBox="0 0 927.549 152.395">
+
+<style>
+
+#Path_20351 {
+    stroke-dasharray:10;
+    stroke-dashoffset: 10;    
+    animation: dash 5s infinite linear ;
+    -webkit-animation: dash 5s infinite  linear;
+    animation-timing-function: cubic-bezier(0.195, 0.010, 0.940, 1.030);
+    -webkit-animation-timing-function: cubic-bezier(0.195, 0.010, 0.940, 1.030);
+}
+
+
+@keyframes dash {
+    
+    from {
+        stroke-dashoffset: 0;
+
+    } 
+    to{
+        stroke-dashoffset: -480;
+    }
+    
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <g id="Group_24681" data-name="Group 24681" transform="translate(-327.541 -1614.613)">
+    <path id="Path_20351" data-name="Path 20351" d="M-8452.146,1609s147.59,118.456,403.879,149.282c162.219,19.512,398.933-95.893,523.068-8.2" transform="translate(8780 6)" fill="none" stroke="#EAE1FF" stroke-width="1" stroke-dasharray="8"/>
+    <g id="Layer_2" data-name="Layer 2" transform="matrix(0.966, 0.259, -0.259, 0.966, 614.987, 1728.703)">
+      <path id="Path_20081" data-name="Path 20081" d="M14.3,12.542,2.047.3A1.241,1.241,0,0,0,.3,2.047L11.538,13.287.621,24.2a1.241,1.241,0,0,0,0,1.749h0a1.241,1.241,0,0,0,1.762,0L14.3,14.031a1.054,1.054,0,0,0,0-1.489Z" transform="translate(0 0)" fill="#EAE1FF"/>
+      <path id="Path_20082" data-name="Path 20082" d="M14.3,12.542,2.047.3A1.241,1.241,0,0,0,.3,2.047L11.538,13.287.621,24.2a1.241,1.241,0,0,0,0,1.749h0a1.241,1.241,0,0,0,1.749,0L14.3,14.031a1.054,1.054,0,0,0,0-1.489Z" transform="translate(11.884 0)" fill="#EAE1FF"/>
+    </g>
+  </g>
+</svg>
