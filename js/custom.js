@@ -84,6 +84,21 @@ if ($("#slider-client").length) {
       },      
     }
   });
+
+
+  $(".retreatSlider").owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: true,
+    autoplay: true,   
+    autoplayTimeout: 3000, 
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+         items: 1 
+      },      
+    }
+  });
   
 
 

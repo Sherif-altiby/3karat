@@ -49,6 +49,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" />
+
+
 
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
@@ -136,7 +139,7 @@
 
       </div>
      
-  </header>
+    </header>
 
     <section class="sub__header main-container">
         <div class="icon"> <i class="fa-solid fa-house"></i> </div>
@@ -153,7 +156,7 @@
                          <input type="text" placeholder="ادخل المدينة أو الحي">
                          <div class="icon"> <i class="fa-solid fa-magnifying-glass"></i> </div>
                    </div>
-                   <div class="search__filter">
+                   <div class="search__filter" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" >
                         <img src="./images/mage_filter.png" alt="">
                        <p> عوامل التصفية </p>
                    </div>
@@ -169,7 +172,206 @@
                           <div class="icon"> <i class="fa-solid fa-angle-down"></i> </div>
                     </div>
                </div>
+               <div class="retreats__cards__container">
+                   <a href="./retreat-details.html" class="retreat__card">
+                        <div class="retreat__carousel">
+                              <div class="owl-carousel retreatSlider" >
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                              </div>
+                        </div>
+                        <div class="retreat__title">
+                              <h2> 2000 ريال سعودي / الشهر </h2>
+                              <div class="rate__rereat">
+                                  <div class="icon"> <i class="fa-solid fa-star"></i> </div>
+                                  <p>(13 تقييم) 4.5  </p>
+                              </div>
+                        </div>    
+                        <div class="retreat_desc"> للايجار شقة ٣٦٠ م على شارع رئيسي الدور الاول فى عمارة... </div>
+                        <div class="retreat__location">
+                            <img src="./images/location.png" alt="">
+                            <p> الرياض </p>
+                        </div>
+                         <div class="details">
+                             <div class="detail"> <img src="./images/space.png" alt="img"> <p> 200 متر² </p> </div>
+                             <div class="detail"> <img src="./images/bed.png" alt="img"> <p> 5 </p> </div>
+                             <div class="detail"> <img src="./images/bath.png" alt="img"> <p> 2 </p> </div> 
+                         </div>
+                         <div href="#" class="retreat__contact"> 
+                            <img src="./images/message.png" alt="msg">
+                            <p> تواصل مع المعلن </p>
+                         </div>
+                   </a>
+                   <a href="./retreat-details.html" class="retreat__card">
+                        <div class="retreat__carousel">
+                              <div class="owl-carousel retreatSlider" >
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                              </div>
+                        </div>
+                        <div class="retreat__title">
+                              <h2> 2000 ريال سعودي / الشهر </h2>
+                              <div class="rate__rereat">
+                                  <div class="icon"> <i class="fa-solid fa-star"></i> </div>
+                                  <p>(13 تقييم) 4.5  </p>
+                              </div>
+                        </div>    
+                        <div class="retreat_desc"> للايجار شقة ٣٦٠ م على شارع رئيسي الدور الاول فى عمارة... </div>
+                        <div class="retreat__location">
+                            <img src="./images/location.png" alt="">
+                            <p> الرياض </p>
+                        </div>
+                         <div class="details">
+                             <div class="detail"> <img src="./images/space.png" alt="img"> <p> 200 متر² </p> </div>
+                             <div class="detail"> <img src="./images/bed.png" alt="img"> <p> 5 </p> </div>
+                             <div class="detail"> <img src="./images/bath.png" alt="img"> <p> 2 </p> </div> 
+                         </div>
+                         <div href="#" class="retreat__contact"> 
+                            <img src="./images/message.png" alt="msg">
+                            <p> تواصل مع المعلن </p>
+                         </div>
+                   </a>
+                   <a href="./retreat-details.html" class="retreat__card">
+                        <div class="retreat__carousel">
+                              <div class="owl-carousel retreatSlider" >
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                              </div>
+                        </div>
+                        <div class="retreat__title">
+                              <h2> 2000 ريال سعودي / الشهر </h2>
+                              <div class="rate__rereat">
+                                  <div class="icon"> <i class="fa-solid fa-star"></i> </div>
+                                  <p>(13 تقييم) 4.5  </p>
+                              </div>
+                        </div>    
+                        <div class="retreat_desc"> للايجار شقة ٣٦٠ م على شارع رئيسي الدور الاول فى عمارة... </div>
+                        <div class="retreat__location">
+                            <img src="./images/location.png" alt="">
+                            <p> الرياض </p>
+                        </div>
+                         <div class="details">
+                             <div class="detail"> <img src="./images/space.png" alt="img"> <p> 200 متر² </p> </div>
+                             <div class="detail"> <img src="./images/bed.png" alt="img"> <p> 5 </p> </div>
+                             <div class="detail"> <img src="./images/bath.png" alt="img"> <p> 2 </p> </div> 
+                         </div>
+                         <div href="#" class="retreat__contact"> 
+                            <img src="./images/message.png" alt="msg">
+                            <p> تواصل مع المعلن </p>
+                         </div>
+                   </a>
+                   <a href="./retreat-details.html" class="retreat__card">
+                        <div class="retreat__carousel">
+                              <div class="owl-carousel retreatSlider" >
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                              </div>
+                        </div>
+                        <div class="retreat__title">
+                              <h2> 2000 ريال سعودي / الشهر </h2>
+                              <div class="rate__rereat">
+                                  <div class="icon"> <i class="fa-solid fa-star"></i> </div>
+                                  <p>(13 تقييم) 4.5  </p>
+                              </div>
+                        </div>    
+                        <div class="retreat_desc"> للايجار شقة ٣٦٠ م على شارع رئيسي الدور الاول فى عمارة... </div>
+                        <div class="retreat__location">
+                            <img src="./images/location.png" alt="">
+                            <p> الرياض </p>
+                        </div>
+                         <div class="details">
+                             <div class="detail"> <img src="./images/space.png" alt="img"> <p> 200 متر² </p> </div>
+                             <div class="detail"> <img src="./images/bed.png" alt="img"> <p> 5 </p> </div>
+                             <div class="detail"> <img src="./images/bath.png" alt="img"> <p> 2 </p> </div> 
+                         </div>
+                         <div href="#" class="retreat__contact"> 
+                            <img src="./images/message.png" alt="msg">
+                            <p> تواصل مع المعلن </p>
+                         </div>
+                   </a>
+                   <a href="./retreat-details.html" class="retreat__card">
+                        <div class="retreat__carousel">
+                              <div class="owl-carousel retreatSlider" >
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                              </div>
+                        </div>
+                        <div class="retreat__title">
+                              <h2> 2000 ريال سعودي / الشهر </h2>
+                              <div class="rate__rereat">
+                                  <div class="icon"> <i class="fa-solid fa-star"></i> </div>
+                                  <p>(13 تقييم) 4.5  </p>
+                              </div>
+                        </div>    
+                        <div class="retreat_desc"> للايجار شقة ٣٦٠ م على شارع رئيسي الدور الاول فى عمارة... </div>
+                        <div class="retreat__location">
+                            <img src="./images/location.png" alt="">
+                            <p> الرياض </p>
+                        </div>
+                         <div class="details">
+                             <div class="detail"> <img src="./images/space.png" alt="img"> <p> 200 متر² </p> </div>
+                             <div class="detail"> <img src="./images/bed.png" alt="img"> <p> 5 </p> </div>
+                             <div class="detail"> <img src="./images/bath.png" alt="img"> <p> 2 </p> </div> 
+                         </div>
+                         <div href="#" class="retreat__contact"> 
+                            <img src="./images/message.png" alt="msg">
+                            <p> تواصل مع المعلن </p>
+                         </div>
+                   </a>
+                   <a href="./retreat-details.html" class="retreat__card">
+                        <div class="retreat__carousel">
+                              <div class="owl-carousel retreatSlider" >
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                                    <div class="item">  <img src="./images/aboutus-1.png" alt=""> </div>
+                              </div>
+                        </div>
+                        <div class="retreat__title">
+                              <h2> 2000 ريال سعودي / الشهر </h2>
+                              <div class="rate__rereat">
+                                  <div class="icon"> <i class="fa-solid fa-star"></i> </div>
+                                  <p>(13 تقييم) 4.5  </p>
+                              </div>
+                        </div>    
+                        <div class="retreat_desc"> للايجار شقة ٣٦٠ م على شارع رئيسي الدور الاول فى عمارة... </div>
+                        <div class="retreat__location">
+                            <img src="./images/location.png" alt="">
+                            <p> الرياض </p>
+                        </div>
+                         <div class="details">
+                             <div class="detail"> <img src="./images/space.png" alt="img"> <p> 200 متر² </p> </div>
+                             <div class="detail"> <img src="./images/bed.png" alt="img"> <p> 5 </p> </div>
+                             <div class="detail"> <img src="./images/bath.png" alt="img"> <p> 2 </p> </div> 
+                         </div>
+                         <div href="#" class="retreat__contact"> 
+                            <img src="./images/message.png" alt="msg">
+                            <p> تواصل مع المعلن </p>
+                         </div>
+                   </a>
+               </div>
           </div>
+    </section>
+
+    <section class="make__pagination">
+          <div class="icon"> <i class="fa-solid fa-chevron-right"></i> </div>
+               <div class="nums">
+                    <div class="num"> 1 </div>
+                    <div class="num"> 2 </div>
+                    <div class="num"> 3 </div>
+                    <div class="num"> 4 </div>
+               </div>
+          <div class="icon"> <i class="fa-solid fa-chevron-left"></i> </div>
     </section>
 
     <footer class="footer" style="background-image: url(images/bg-footer.png);">
@@ -258,15 +460,14 @@
           </div>
       </div>
 
-  </footer>
+    </footer>
 
-  <div class="bg_menu "></div>
-  <div class="menu_responsive" id="menu-div">
+    <div class="bg_menu "></div>
+    <div class="menu_responsive" id="menu-div">
 
       <div class="logo-menu">
           <img src="images/logo.svg" alt="">
       </div>
-
       <div class="element_menu_responsive">
           <ul>
               <li><a href="/">الرئيسية</a></li>
@@ -284,7 +485,170 @@
       <div class="remove-mune">
           <span></span>
       </div>
-  </div>
+    </div>
+
+    <!-- Left Filter Modal -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+           <h3> عوامل تصفية </h3>
+        </div>
+        <div class="offcanvas-body">
+            <form action="">
+                     <div class="retreat__space">
+                            <div class="retreat__space__title" >
+                                <img src="./images/location-12.png" alt="">
+                                <p> المنطقة </p>
+                            </div>
+                            <input type="text" placeholder=" المدينة أو الحي">
+                    </div>  
+                    <div class="retreat__kind">
+                        <div class="retreat__space__title" >
+                            <img src="./images/location-12.png" alt="">
+                            <p> نوع العقار </p>
+                        </div>
+                        <div class="retreat__kind__inputs">
+                             <div class="input">
+                                <input type="checkbox" id="one" value="فلل خاصة ">
+                                <label for="one">
+                                     <img src="./images/t-1.png" alt="">
+                                     <p> فلل خاصة  </p>
+                                </label>
+                             </div>
+                             <div class="input">
+                                <input type="checkbox" id="two" value="فلل خاصة ">
+                                <label for="two">
+                                     <img src="./images/t-2.png" alt="">
+                                     <p> شاليهات مفروشة خاصة </p>
+                                </label>
+                             </div>
+                             <div class="input">
+                                <input type="checkbox" id="three" value="فلل خاصة ">
+                                <label for="three">
+                                     <img src="./images/t-3.png" alt="">
+                                     <p> استديوهات خاصة </p>
+                                </label>
+                             </div>
+                             <div class="input">
+                                <input type="checkbox" id="four" value="فلل خاصة ">
+                                <label for="four">
+                                     <img src="./images/t-1.png" alt="">
+                                     <p> شقق خاصة </p>
+                                </label>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="price__slider">
+                            <div class="retreat__space__title" >
+                                <img src="./images/location-12.png" alt="">
+                                <p> السعر ب (الريال السعودي) </p>
+                            </div>
+                            <div class="range__vlue">
+                                <p  data-range="200" > 200 ريال </p>
+                                <p data-range="1000" > 1000 ريال </p>
+                            </div>
+                            <div id="main_slider"></div>
+                            <div class="range__vlue__text">
+                                <p > اقل   </p>
+                                <p >  اعلى </p>
+                            </div>
+                     </div>
+
+                     <div class="price__slider">
+                        <div class="retreat__space__title" >
+                            <img src="./images/location-12.png" alt="">
+                            <p> المساحة </p>
+                        </div>
+                        <div class="range__vlue">
+                            <p  data-range="200" > 200 م </p>
+                            <p data-range="1000" > 1000 م </p>
+                        </div>
+                        <div id="main_slider_two"></div>
+                        <div class="range__vlue__text">
+                            <p > اقل   </p>
+                            <p >  اعلى </p>
+                        </div>
+                  </div>
+                  <div class="rooms">
+                    <div class="retreat__space__title" >
+                        <img src="./images/location-12.png" alt="">
+                        <p> الغرف والحمامات </p>
+                    </div>
+                    <h2> عدد الغرف </h2>
+                    <div class="inputs__container">
+                          <div class="input">
+                               <input id="0" checked type="checkbox" value="0">
+                               <label for="0"> بدون تحديد </label>
+                          </div>
+                          <div class="input">
+                               <input id="1" type="checkbox" value="1">
+                               <label for="1"> 1   </label>
+                          </div>
+                          <div class="input">
+                               <input id="2" type="checkbox" value="2">
+                               <label for="2"> 2   </label>
+                          </div>
+                          <div class="input">
+                               <input id="3" type="checkbox" value="3">
+                               <label for="3"> 3   </label>
+                          </div>
+                          <div class="input">
+                               <input id="4" type="checkbox" value="4">
+                               <label for="4"> 4   </label>
+                          </div>
+                          <div class="input">
+                               <input id="5" type="checkbox" value="5">
+                               <label for="5"> 5   </label>
+                          </div>
+                          <div class="input">
+                               <input id="6" type="checkbox" value="6">
+                               <label for="6"> 6   </label>
+                          </div>
+                          <div class="input">
+                               <input id="+7" type="checkbox" value="+7">
+                               <label for="+7"> +7   </label>
+                          </div>
+                    </div>
+                    <h2> عدد الحمامات </h2>
+                    <div class="inputs__container">
+                          <div class="input">
+                               <input id="0" checked type="checkbox" value="0">
+                               <label for="0"> بدون تحديد </label>
+                          </div>
+                          <div class="input">
+                               <input id="1" type="checkbox" value="1">
+                               <label for="1"> 1   </label>
+                          </div>
+                          <div class="input">
+                               <input id="2" type="checkbox" value="2">
+                               <label for="2"> 2   </label>
+                          </div>
+                          <div class="input">
+                               <input id="3" type="checkbox" value="3">
+                               <label for="3"> 3   </label>
+                          </div>
+                          <div class="input">
+                               <input id="4" type="checkbox" value="4">
+                               <label for="4"> 4   </label>
+                          </div>
+                          <div class="input">
+                               <input id="5" type="checkbox" value="5">
+                               <label for="5"> 5   </label>
+                          </div>
+                          <div class="input">
+                               <input id="6" type="checkbox" value="6">
+                               <label for="6"> 6   </label>
+                          </div>
+                          <div class="input">
+                               <input id="+7" type="checkbox" value="+7">
+                               <label for="+7"> +7   </label>
+                          </div>
+                    </div>
+                  </div>
+            </form>
+        </div>
+      </div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -302,9 +666,57 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
      
     <script src="js/videos.js"></script>
 
     <script src="js/custom.js"></script>
+
+    <script>
+  
+        const rangeValues = document.querySelectorAll('.range__vlue p');
+
+        const startValueOne = Number(rangeValues[0].getAttribute("data-range"));
+        const endValueOne = Number(rangeValues[1].getAttribute("data-range"));
+
+        const startValueTwo = Number(rangeValues[2].getAttribute("data-range"));
+        const endValueTwo = Number(rangeValues[3].getAttribute("data-range"));
+
+        var slider = document.getElementById('main_slider');
+        var sliderTwo = document.getElementById('main_slider_two');
+
+        noUiSlider.create(slider, {
+            start: [startValueOne, endValueOne], 
+            connect: true,
+            range: {
+                'min': startValueOne,  
+                'max': endValueOne     
+            },
+            direction: 'rtl', 
+        });
+
+        slider.noUiSlider.on('update', function(values) {
+            rangeValues[0].textContent = `${Math.floor(values[0])} ريال`;  
+            rangeValues[1].textContent = `${Math.floor(values[1])} ريال`;  
+        });
+
+
+        noUiSlider.create(sliderTwo, {
+            start: [startValueTwo, endValueTwo], 
+            connect: true,
+            range: {
+                'min': startValueTwo,  
+                'max': endValueTwo     
+            },
+            direction: 'rtl', 
+        });
+
+        sliderTwo.noUiSlider.on('update', function(values) {
+            rangeValues[2].textContent = `${Math.floor(values[0])} م`;  
+            rangeValues[3].textContent = `${Math.floor(values[1])} م`;  
+        });
+
+    </script>
   </body>
 </html>

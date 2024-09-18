@@ -20,6 +20,26 @@
     .about__us__text p{
         line-height: 2;
     }
+
+    .retreat__title h2 {
+        font-size: 16px;
+    }
+
+    .rate__rereat p{
+        font-size: 15px;
+    }
+
+    .rate__rereat .icon {
+        font-size: 14px;
+    }
+
+    .rate__rereat {
+        gap: 5px;
+    }
+
+    .retreat_desc {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -87,6 +107,10 @@
     .search__result{
         flex-direction: row;
     }
+
+    .retreat__card{
+        width: calc(100% / 2 - 20px);
+    }
 }
 
 
@@ -151,6 +175,26 @@
     .form__contact__us{
         width: 95%;
     }
+
+    .retreat__search .input {
+        width: 300px;
+    }
+
+    .retreat__search .input .icon {
+        width: 40px;
+        height: 40px;
+        left: 10px;
+    }
+
+    .retreat__search .input img.location {
+        right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .retreat__search .input input {
+        padding-right: 40px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -197,6 +241,28 @@
 
     .blog__search{
         margin-bottom: 30px;
+    }
+
+    .retreat__card{
+        width: 100%;
+    }
+
+    .retreat__search{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .retreat__search .input {
+        width: 100%;
+    }
+
+    .search__filter{
+        width: 100%;
+    }
+
+    .retreats__count{
+        flex-direction: column-reverse;
+        gap: 30px;
     }
 }
 
@@ -259,5 +325,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .retreat__title{
+        flex-direction: column;
     }
 }
