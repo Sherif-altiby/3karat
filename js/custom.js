@@ -325,6 +325,9 @@ const fileInputs = document.querySelectorAll(
   // user choose time 
   const timeInputs = document.querySelectorAll('.timeInput');
   const placeholders = document.querySelectorAll('.time-placeholder');
+
+  const dateInputs = document.querySelectorAll('.arrive__card input');
+  const datePlaceHolders = document.querySelectorAll(".date-placeholder")
     
   if (timeInputs) {
     timeInputs.forEach((input, index) => {
@@ -357,6 +360,32 @@ const fileInputs = document.querySelectorAll(
   }
 
 
+
+if (dateInputs.length === datePlaceHolders.length) {
+  dateInputs.forEach((input, index) => {
+    const placeholder = datePlaceHolders[index];
+    
+    input.addEventListener('focus', function () {
+      if (input.showPicker) {
+        input.showPicker();
+      }
+    });
+    
+    input.addEventListener('input', function () {
+      if (input.value) {
+        placeholder.style.opacity = '0';
+        placeholder.style.visibility = 'hidden';
+      } else {
+        placeholder.style.opacity = '1';
+        placeholder.style.visibility = 'visible';
+      }
+    });
+  });
+} else {
+  console.warn('Mismatch between number of date inputs and placeholders.');
+}
+
+
   // user upload permission file
   const inputFile = document.getElementById("inputpermission");
   const inputFilePlaceHolder = document.querySelector('.file-placeholder');
@@ -380,5 +409,21 @@ const fileInputs = document.querySelectorAll(
     })
   }
 
- 
+//  user make rating
+
+const allRating = document.querySelectorAll('.add-rating .input label');
+
+if(allRating){
+  allRating.forEach((item, index) => {
+      item.addEventListener("click", (e) => {
+          allRating.forEach((icon, iconIndex) => {
+              if(iconIndex <= index){
+                icon.classList.add("active")
+              }else{
+                icon.classList.remove("active")
+              }
+          })
+      })
+  })
+}
   

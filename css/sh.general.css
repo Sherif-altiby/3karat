@@ -28,7 +28,7 @@ p {
 }
 
 input {
-  outline: none ;
+  outline: none;
 }
 
 select {
@@ -39,9 +39,13 @@ select {
   outline: none;
 }
 
-textarea{
-    resize: none;
-    outline: none;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+textarea {
+  resize: none;
+  outline: none;
 }
 
 .main-container {
@@ -61,85 +65,103 @@ textarea{
   color: var(--primary1);
 }
 
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-
-.frm__btn{
-    background-color: var(--primary1);
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    width: 250px;
-    border: 2px solid var(--primary1);
-    margin-top: 30px;
-    position: relative;
-    overflow: hidden;
+.frm__btn {
+  background-color: var(--primary1);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 250px;
+  border: 2px solid var(--primary1);
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
-.frm__btn::before{
-    content: '';
-    position: absolute;
-    width:0px;
-    height: 600px;
-    background-color: white;
-    top: -200px;
-    right: 60%;
-    transform: translateX(-60%) rotate(45deg);
-    transition: 1s;
+.frm__btn::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 600px;
+  background-color: white;
+  top: -200px;
+  right: 60%;
+  transform: translateX(-60%) rotate(45deg);
+  transition: 1s;
 }
 
-.frm__btn::after{
-    content: '';
-    position: absolute;
-    width:0px;
-    height: 600px;
-    background-color:white;
-    top: -200px;
-    left: 40%;
-    transform: translateX( -40%) rotate(45deg);
-    transition: 1s;
-
+.frm__btn::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 600px;
+  background-color: white;
+  top: -200px;
+  left: 40%;
+  transform: translateX(-40%) rotate(45deg);
+  transition: 1s;
 }
 
-.frm__btn p{
-    margin: 0;
-    transition: 1s;
-    color: #fff !important;
+.frm__btn p {
+  margin: 0;
+  transition: 1s;
+  color: #fff !important;
 }
 
-.frm__btn:hover p{
-    color: var(--primary1) !important;
-    position: relative;
+.frm__btn:hover p {
+  color: var(--primary1) !important;
+  position: relative;
+}
+
+.frm__btn.reset {
+  background-color: #fff;
+  border-color: var(--color-Primary5);
+}
+
+.frm__btn.reset::before {
+  background-color: var(--primary1);
+}
+
+.frm__btn.reset::after {
+  background-color: var(--primary1);
+}
+
+.frm__btn.reset p {
+  color: var(--primary2) !important;
+}
+
+.frm__btn.reset:hover p {
+  color: #fff !important;
 }
 
 .frm__btn:hover::after,
-.frm__btn:hover::before{
-    width: 150%;
+.frm__btn:hover::before {
+  width: 150%;
 }
 
-.frm__btn p{
-    z-index: 9;
+.frm__btn p {
+  z-index: 9;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0;
 }
 
-.modal.custom__modal{
+.modal.custom__modal {
   --bs-modal-width: 950px;
 }
 
-.modal.custom__modal .modal-header{
+.modal.custom__modal .modal-header {
   border: none;
 }
