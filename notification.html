@@ -49,6 +49,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+    <!-- Range Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" />
+
+     <!-- Light Gallary -->
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.0/css/lightgallery.min.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
@@ -59,7 +65,7 @@
   </head>
   <body>
 
-    <header class="header active custom">
+    <header header class="header active custom">
       <div class="main-container">
           <div class="top-bar">
               <div class="contact-header">
@@ -133,173 +139,48 @@
 
       </div>
      
-  </header>
+    </header>
 
+    <section class="sub__header main-container">
+        <div class="icon"> <i class="fa-solid fa-house"></i> </div>
+        <a href="/">  الرئيسية </a>
+        <span> <i class="fa-solid fa-angle-left"></i> </span>
+        <p>    الإشعارات </p>
+    </section>
 
-    <section class="add__property">
-      <div class="main-container">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div
-              class="custom__shadow custom__radius property__links__container"
-            >
-              <div class="add__property__link">
-                <a data-aos="fade-left" href="/property-desc.html">
-                  <div class="link__number">1</div>
-                  <div class="link__text">
-                    <h3>وصف العقار</h3>
-                    <p>أدخل وصف عقارك</p>
-                  </div>
-                </a>
+    <section class="notifications main-container">
+          <div class="notification" data-aos="fade-up" >
+              <div class="img"> <img src="./images/not-img.png" alt="img"> </div>
+              <div class="text">
+                  <p> يرجى تأكيد عنوان بريدك الإلكتروني من خلال النقر على الرابط الذي أرسلناه إليك عبر البريد الإلكتروني للتو. إذا لم تتمكن من العثور على البريد الإلكتروني، يمكنك طلب بريد إلكتروني جديد للتأكيد أو تغيير عنوان بريدك الإلكتروني. </p>
+                  <div class="date"> 26 أغسطس 2024 </div>
               </div>
-              <div class="add__property__link">
-                <a data-aos="fade-left" href="/property-title.html">
-                  <div class="link__number">2</div>
-                  <div class="link__text">
-                    <h3>العنوان</h3>
-                    <p>ادخل عنوان العقار</p>
-                  </div>
-                </a>
-              </div>
-              <div class="add__property__link">
-                <a
-                  data-aos="fade-left"
-                  class="active"
-                  href="/property-img.html"
-                >
-                  <div class="link__number">3</div>
-                  <div class="link__text">
-                    <h3>صور العقار</h3>
-                    <p>ادخل صور العقار</p>
-                  </div>
-                </a>
-              </div>
-              <div class="add__property__link">
-                <a data-aos="fade-left" href="/ministry-permtions.html">
-                  <div class="link__number">4</div>
-                  <div class="link__text">
-                    <h3>شروط الإيجار</h3>
-                    <p>أضف شروط الايجار</p>
-                  </div>
-                </a>
-              </div>
-              <div class="add__property__link">
-                <a data-aos="fade-left" href="/rental-terms.html">
-                  <div class="link__number">5</div>
-                  <div class="link__text">
-                    <h3>تصريح وزارة السياحة</h3>
-                    <p>أضف تصريح وزارة السياحة</p>
-                  </div>
-                </a>
-              </div>
-              <div class="add__property__link">
-                <a data-aos="fade-left" href="/advertise-confirm.html">
-                  <div class="link__number">6</div>
-                  <div class="link__text">
-                    <h3>تأكيد الاعلان</h3>
-                    <p>التأكد من بيانات العقار</p>
-                  </div>
-                </a>
-              </div>
-            </div>
+              <div class="delete_note"> <i class="fa-solid fa-xmark"></i> </div>
           </div>
-          <div class="col-12 col-md-8">
-            <div class="custom__shadow custom__radius property__desc">
-              <div class="property__desc__header">
-                <h2>صور العقار</h2>
-                <p>ادخل صور عقارك</p>
+          <div class="notification" data-aos="fade-up" >
+              <div class="img"> <img src="./images/not-img.png" alt="img"> </div>
+              <div class="text">
+                  <p> يرجى تأكيد عنوان بريدك الإلكتروني من خلال النقر على الرابط الذي أرسلناه إليك عبر البريد الإلكتروني للتو. إذا لم تتمكن من العثور على البريد الإلكتروني، يمكنك طلب بريد إلكتروني جديد للتأكيد أو تغيير عنوان بريدك الإلكتروني. </p>
+                  <div class="date"> 26 أغسطس 2024 </div>
               </div>
-              <form action="">
-                <div class="upload__img__container">
-                  <div class="add__photo">
-                    <label for="user-img-4">
-                      <img src="./images/up-img.png" alt="" />
-                    </label>
-                    <input type="file" id="user-img-4" />
-                  </div>
-                  <div class="add__photo">
-                    <label for="user-img-4">
-                      <img src="./images/up-img.png" alt="" />
-                    </label>
-                    <input type="file" id="user-img-4" />
-                  </div>
-                  <div class="add__photo">
-                    <label for="user-img-4">
-                      <img src="./images/up-img.png" alt="" />
-                    </label>
-                    <input type="file" id="user-img-4" />
-                  </div>
-                  <div class="add__photo">
-                    <label for="user-img-4">
-                      <img src="./images/up-img.png" alt="" />
-                    </label>
-                    <input type="file" id="user-img-4" />
-                  </div>
-                  <div class="add__photo">
-                    <label for="user-img-4">
-                      <img src="./images/up-img.png" alt="" />
-                    </label>
-                    <input type="file" id="user-img-4" />
-                  </div>
-                  <div class="add__photo">
-                    <label for="user-img-4">
-                      <img src="./images/up-img.png" alt="" />
-                    </label>
-                    <input type="file" id="user-img-4" />
-                  </div>
-                  <div class="add__photo">
-                    <label for="user-img-4">
-                      <img src="./images/up-img.png" alt="" />
-                    </label>
-                    <input type="file" id="user-img-4" />
-                  </div>
-                </div>
-
-                <p class="img__desc">
-                  يرجى التأكد من تحميل صور عالية الجودة لعقارك، حيث تساعد الصور
-                  الواضحة والجذابة في جذب المزيد من المستأجرين المحتملين.
-                </p>
-
-                <div class="more__features">
-                  <h4>ميزات إضافية</h4>
-                  <p>ادخل ميزات العقار الإضافية</p>
-
-                  <div class="feat__input__container">
-                    <div class="feat__input">
-                      <input type="checkbox" id="f-1" />
-                      <label for="f-1"> غسّالة </label>
-                    </div>
-                    <div class="feat__input">
-                      <input type="checkbox" id="f-2" />
-                      <label for="f-2"> مكيّف </label>
-                    </div>
-                    <div class="feat__input">
-                      <input type="checkbox" id="f-3" />
-                      <label for="f-3"> تلفزيون </label>
-                    </div>
-                    <div class="feat__input">
-                      <input type="checkbox" id="f-4" />
-                      <label for="f-4"> واي فاي </label>
-                    </div>
-                    <div class="feat__input">
-                      <input type="checkbox" id="f-5" />
-                      <label for="f-5">
-                        كاميرات المراقبة الخارجية للعقار
-                      </label>
-                    </div>
-                    <div class="feat__input">
-                      <input type="checkbox" id="f-6" />
-                      <label for="f-6"> مواقف سيارات مجانية في الأبنية </label>
-                    </div>
-                  </div>
-                </div>
-
-                <button type="submit" class="frm__btn"><p>التالي</p></button>
-              </form>
-            </div>
+              <div class="delete_note"> <i class="fa-solid fa-xmark"></i> </div>
           </div>
-        </div>
-      </div>
+          <div class="notification" data-aos="fade-up" >
+              <div class="img"> <img src="./images/not-img.png" alt="img"> </div>
+              <div class="text">
+                  <p> يرجى تأكيد عنوان بريدك الإلكتروني من خلال النقر على الرابط الذي أرسلناه إليك عبر البريد الإلكتروني للتو. إذا لم تتمكن من العثور على البريد الإلكتروني، يمكنك طلب بريد إلكتروني جديد للتأكيد أو تغيير عنوان بريدك الإلكتروني. </p>
+                  <div class="date"> 26 أغسطس 2024 </div>
+              </div>
+              <div class="delete_note"> <i class="fa-solid fa-xmark"></i> </div>
+          </div>
+          <div class="notification" data-aos="fade-up" >
+              <div class="img"> <img src="./images/not-img.png" alt="img"> </div>
+              <div class="text">
+                  <p> يرجى تأكيد عنوان بريدك الإلكتروني من خلال النقر على الرابط الذي أرسلناه إليك عبر البريد الإلكتروني للتو. إذا لم تتمكن من العثور على البريد الإلكتروني، يمكنك طلب بريد إلكتروني جديد للتأكيد أو تغيير عنوان بريدك الإلكتروني. </p>
+                  <div class="date"> 26 أغسطس 2024 </div>
+              </div>
+              <div class="delete_note"> <i class="fa-solid fa-xmark"></i> </div>
+          </div>
     </section>
 
     <footer class="footer" style="background-image: url(images/bg-footer.png);">
@@ -388,15 +269,14 @@
           </div>
       </div>
 
-  </footer>
+    </footer>
 
-  <div class="bg_menu "></div>
-  <div class="menu_responsive" id="menu-div">
+    <div class="bg_menu "></div>
+    <div class="menu_responsive" id="menu-div">
 
       <div class="logo-menu">
           <img src="images/logo.svg" alt="">
       </div>
-
       <div class="element_menu_responsive">
           <ul>
               <li><a href="/">الرئيسية</a></li>
@@ -414,14 +294,14 @@
       <div class="remove-mune">
           <span></span>
       </div>
-  </div>
+    </div>
 
-  <section class="notifications__menu custom__shadow " >
-    <a href="/notification.html" class="active" > الاشعارات  </a>
-    <a href="/profile-editing-data.html"> الحساب  </a>
-    <a href="/notification.html"> تواصل معنا  </a>
-    <a href="/log-out.html" class="log" > <span> - </span> تسجيل الخروج  </a>
-</section>
+    <section class="notifications__menu custom__shadow " >
+        <a href="/notification.html" class="active" > الاشعارات  </a>
+        <a href="/profile-editing-data.html"> الحساب  </a>
+        <a href="/notification.html"> تواصل معنا  </a>
+        <a href="/log-out.html" class="log" > <span> - </span> تسجيل الخروج  </a>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -439,6 +319,10 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.0/lightgallery.min.js"></script>
      
     <script src="js/videos.js"></script>
 

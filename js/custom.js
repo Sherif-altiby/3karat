@@ -427,3 +427,14 @@ if(allRating){
   })
 }
   
+
+// toggle notificationsmenu
+
+const toggleMenuBtn = document.querySelector('.toggle-menu-note');
+const notificationsMenu = document.querySelector('.notifications__menu')
+
+if(toggleMenuBtn){
+  toggleMenuBtn.addEventListener("click", (e) => {
+    notificationsMenu.classList.toggle('show')
+  })
+}
