@@ -1,5 +1,4 @@
-// Aos
-AOS.init();
+
 
 setTimeout(() => {
   $(".loading").fadeOut(1000);
@@ -87,6 +86,20 @@ if ($("#slider-client").length) {
 
 
   $(".retreatSlider").owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: true,
+    autoplay: true,   
+    autoplayTimeout: 3000, 
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+         items: 1 
+      },      
+    }
+  });
+  
+  $(".advertiseCarousel").owlCarousel({
     loop: true,
     margin: 10,
     dots: true,

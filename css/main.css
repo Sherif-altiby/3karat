@@ -1,3 +1,1066 @@
+.login,
+.register,
+.forget-password,
+.reset-password,
+.logOut {
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.login .login-container,
+.register .register-container,
+.logOut .logOut-container,
+.forget-password .forget-password-container,
+.reset-password .reset-password-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .login-header,
+.register .register-header,
+.reset-password .forget-password-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login .login-header p,
+.register .register-header p,
+.forget-password .forget-password-header p,
+.reset-password .reset-password-header p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.login .login-header a,
+.register .register-header a,
+.forget-password .forget-password-header a {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--primary1);
+  text-decoration: none;
+}
+
+.login .login-form,
+.register .register-form,
+.logOut .logOut-form,
+.forget-password .forget-form,
+.reset-password .reset-form {
+  padding: 50px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login .login-form-header a,
+.register .register-form .register-form-header a,
+.forget-password .login-form-header a {
+  font-size: 22px;
+  font-weight: 500;
+  color: #8d8f95;
+  position: relative;
+  text-decoration: none;
+}
+
+.login .login-form-header,
+.register .register-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.forget-password .forget-password-header,
+.reset-password .reset-password-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.forget-password .forget-password-header p:first-child,
+.reset-password .reset-password-header p {
+  color: var(--primary1);
+}
+
+.forget-password .forget-password-header p:last-child {
+  color: var(--gray);
+  font-size: 16px;
+}
+.login .login-form-header a:hover,
+.register .register-form-header a:hover,
+.forget-password .forget-password-header a:hover {
+  color: var(--primary1);
+}
+
+.login .login-form-header a::after,
+.register .register-form-header a::after,
+.forget-password .forget-password-header a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary1);
+  position: absolute;
+  bottom: -15px;
+  right: 50%;
+
+  transition: width 0.5s ease;
+}
+
+.login .login-form-header a::before,
+.register .register-form-header a::before,
+.forget-password .forget-password-header a::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary1);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+
+  transition: width 0.5s ease;
+}
+
+.login .login-form-header a:hover::after,
+.register .register-form-header a:hover::after,
+.forget-password .forget-password-header a:hover::after {
+  width: 50%;
+}
+
+.login .login-form-header a:hover::before,
+.register .register-form-header a:hover::before,
+.forget-password .forget-password-header a:hover::before {
+  width: 50%;
+}
+
+.login-form,
+.register-form,
+.forget-form,
+.reset-form {
+  padding: 40px 20px 0;
+}
+
+.login .login-form form,
+.register .register-form form,
+.forget-password .forget-form form,
+.reset-password .reset-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login .login-form form input,
+.register .register-form form input,
+.forget-password .forget-form form input,
+.reset-password .reset-form form input {
+  width: 100%;
+  height: 70px;
+  padding: 24px 40px 24px 20px;
+  border-radius: 10px;
+  border: 1px solid #dbf0e9;
+  outline-color: #8d8f9565;
+}
+
+.login .login-form form .input,
+.register .register-form form .input,
+.forget-password .forget-form form .input,
+.reset-password .reset-form form .input {
+  position: relative;
+}
+
+.login .login-form form .input img,
+.register .register-form form .input img,
+.forget-password .forget-form form .input img,
+.reset-password .reset-form form .input img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.login .login-form form a,
+.register .register-form a,
+.forget-password .forget-form form a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+.login .login-form form button,
+.register .register-form form button,
+.forget-password .forget-form form button,
+form button {
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  height: 70px;
+  align-content: center;
+  text-align: center;
+  background-color: var(--primary1);
+  border-radius: 10px;
+  border: none;
+  transition: 1s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  z-index: 2;
+}
+
+.login .login-form form button::before,
+.register .register-form form button::before,
+.forget-password .forget-form form button::before,
+form button::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 1s ease;
+}
+
+/* .login .login-form form button::after,
+.forget-password .forget-form form button::after{
+  content: '';
+  position: absolute;
+  width:0px;
+  height: 600px;
+  background-color:white;
+  top: -200px;
+  left: 40%;
+  transform: translateX( -40%) rotate(45deg);
+  transition: 1s;
+
+} */
+
+.login .login-form form button p,
+.register .register-form form button p,
+form button p,
+form button p {
+  margin: 0;
+  transition: 1s;
+}
+
+.login .login-form form button:hover p,
+.register .register-form button:hover p,
+.forget-password .forget-form form button:hover p,
+.reset-form form button:hover p {
+  color: var(--primary1);
+  position: relative;
+}
+
+.login .login-form form button:hover,
+.register .register-form form button:hover,
+.forget-password .forget-form form button:hover,
+form button:hover {
+  border: 1px solid var(--primary1);
+  color: var(--primary1) !important;
+}
+
+.login .login-form form button:hover::before,
+.register .register-form button:hover::before,
+.forget-password .forget-form form button:hover::before,
+form button:hover::before,
+.login .login-form .login-links .col:hover::after,
+.login .login-form .login-links .col:hover::before,
+.register .register-form .register-links .col:hover::before,
+.add-property:hover::before {
+  height: 800%;
+}
+
+.login .login-form form button p,
+.register .register-form form button p,
+.forget-password .forget-form form button p {
+  z-index: 9;
+}
+
+.forget-password .forget-form form .send-code {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.forget-password .forget-form form .send-code a {
+  color: var(--primary1);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login .login-form .login-links,
+.register .register-form .register-links {
+  text-align: center;
+}
+
+.login .login-form .login-links .row,
+.register .register-form .register-links .row {
+  gap: 15px;
+  margin: 20px 0px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login .login-form .login-links .col,
+.register .register-form .register-links .col {
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #52b69582;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.login .login-form .login-links .col::before,
+.register .register-form .register-links .col::before,
+.add-property::before {
+  content: "";
+  position: absolute;
+  background-color: var(--primary1);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 1s ease;
+}
+
+.login .login-form .login-links .col:hover .col a,
+.login .login-form .login-links .col:hover p,
+.register .register-form .register-links .col:hover .col a,
+.register .register-form .register-links .col:hover p,
+.add-property:hover {
+  position: relative;
+  color: white;
+}
+
+/* 
+.login .login-form .login-links .col a{
+  z-index: 9;
+} */
+
+.add-property {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.login .login-form .login-links .col a,
+.register .register-form .register-links .col a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.login .login-form .login-links .col img,
+.register .register-form .register-links .col img {
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
+  transition: 0.3s;
+}
+.login .login-form .login-links .col p,
+.register .register-form .register-links .col p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary1);
+  margin: 0;
+  transition: 1s;
+}
+
+#verification-email {
+  color: black;
+}
+
+.forget-form form .input-check-code {
+  display: flex;
+  gap: 10px;
+  direction: ltr;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.forget-form form .input-check-code input {
+  width: 75px !important;
+  height: 75px !important;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  background-color: #edf7f482;
+}
+
+.login .login-form-header .active-form::after,
+.register .register-form-header .active-form::after,
+.forget-password .forget-password-header .active-form::after,
+.login .login-form-header .active-form::before,
+.register .register-form-header .active-form::before,
+.forget-password .forget-password-header .active-form:hover::before {
+  width: 50%;
+}
+
+.login .login-form .login-form-header .active-form,
+.register .register-form .register-form-header .active-form {
+  color: var(--primary1);
+}
+
+.property-profile {
+  margin: 100px 0;
+}
+
+.property-profile aside {
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.property-profile aside .profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: right;
+  border-bottom: 1px solid #d1d1d195;
+  padding: 10px;
+}
+
+.property-profile aside .profile-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.property-profile aside .profile-header h3 {
+  color: var(--primary1);
+  font-size: 24px;
+}
+
+.property-profile aside .profile-header p {
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.property-profile aside .profile-header .profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.property-profile aside .profile-links ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.property-profile aside .profile-links ul li a {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.property-profile aside .profile-links ul li a:hover {
+  color: var(--primary1);
+}
+
+.property-profile aside .profile-links .add-property {
+  display: block;
+  width: 100%;
+  height: 64px;
+  border: 2px solid var(--primary1);
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  font-size: 18px;
+  color: var(--primary1);
+  transition: 1s;
+}
+
+.property-profile aside .profile-links .add-property:hover {
+  color: white;
+}
+.property-profile .property-list .nav {
+  border-radius: 12px;
+  border: 1px solid #dbf0e9;
+  padding: 10px;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+}
+
+.property-profile .property-list .nav button {
+  width: 180px;
+  height: 64px;
+  background-color: white;
+  color: var(--gray);
+  text-align: center;
+  align-content: center;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.property-profile .property-list .nav .active {
+  background-color: #dbf0e98d;
+  color: var(--primary1);
+}
+
+.property-list .list-nav .nav-card {
+  border: 1px solid #dbf0e9;
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--gray);
+  margin: 20px 0;
+}
+
+.property-list .list-nav .nav-card .col-lg-6,
+.property-list .list-nav .nav-card .col-lg-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.property-list .list-nav .nav-card .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.property-list .list-nav .nav-card .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.property-list .list-nav .nav-card .card-header .location {
+  display: flex;
+}
+
+.property-list .list-nav .nav-card .card-header .location img {
+  width: 24px;
+  height: 22px;
+}
+
+.property-list .list-nav .nav-card .card-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.property-list .list-nav .nav-card .period {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.property-list .list-nav .nav-card .period i {
+  color: var(--primary1);
+}
+
+.property-list .list-nav .nav-card .period p {
+  margin-bottom: 5px;
+}
+
+.property-list .list-nav .nav-card .dates-details,
+.property-list .list-nav .nav-card .times-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.property-list .list-nav .nav-card .dates-details h5,
+.property-list .list-nav .nav-card .times-details h5 {
+  color: var(--primary1);
+}
+
+.property-list .list-nav .nav-card .dates-details p,
+.property-list .list-nav .nav-card .times-details p {
+  color: var(--gray);
+}
+
+.profile-link-active {
+  color: var(--primary1) !important;
+  position: relative;
+  padding-right: 15px;
+}
+
+.profile-link-active::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: var(--primary1);
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+.prfile-editing-form {
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.prfile-editing-header {
+  margin-bottom: 30px;
+}
+.prfile-editing-header p,
+.prfile-editing-body form p {
+  font-size: 24px;
+  color: var(--primary1);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.prfile-editing-header h3 {
+  color: var(--gray);
+  font-size: 18px;
+}
+
+.prfile-editing-body form .input {
+  position: relative;
+}
+
+.prfile-editing-body form input {
+  width: 100%;
+  height: 70px;
+  padding: 24px 40px 24px 20px;
+  border-radius: 10px;
+  border: 1px solid #dbf0e9;
+  outline-color: #8d8f9565;
+}
+
+.prfile-editing-body form .input img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.prfile-editing-body form .input i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-size: 20px;
+  color: var(--gray);
+}
+
+form .action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+form .action-buttons button {
+  color: white;
+  background-color: var(--primary1);
+  width: 200px;
+  height: 64px;
+  border-radius: 8px;
+  border: transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+form .action-buttons a {
+  color: var(--primary1);
+  background-color: white;
+  border: 1px solid #dbf0e9;
+  width: 200px;
+  height: 64px;
+  border-radius: 8px;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+}
+
+.logOut-form {
+  align-items: center;
+  justify-content: center;
+}
+
+.logOut .logOut-container .logOut-cover {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: #edf7f4;
+  align-content: center;
+  text-align: center;
+}
+
+.logOut-form h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary1);
+}
+
+.logOut-form p {
+  font-size: 18px;
+  color: var(--gray);
+  text-align: center;
+}
+
+.property-attributes,
+.sub-property-attributes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sub-property-attributes h4 {
+  font-size: 18px;
+}
+
+.advertise-date {
+  display: flex;
+  align-items: center;
+}
+.advertise-date img {
+  width: 24px;
+  height: 24px;
+}
+
+.advertise-date p {
+  margin: 0;
+}
+
+hr {
+  border: 1px solid var(--primary1) !important;
+}
+
+.booking-case {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-case p:last-child {
+  color: var(--primary1);
+}
+
+.offers-cards-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offers-cards-header p {
+  font-size: 22px;
+  color: var(--primary1);
+}
+
+.offers-cards-header button {
+  border: 1.5px solid var(--primary1);
+  border-radius: 8px;
+  color: var(--primary1);
+  background-color: white;
+  width: 220px;
+  height: 64px;
+  font-size: 18px;
+}
+
+.offers-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offers-card-header p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--primary1);
+}
+
+.offers-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.offers-card-header a {
+  text-decoration: none;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #edf7f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offers-card-header a img {
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+}
+
+.offer-date {
+  color: var(--gray);
+  font-size: 18px;
+}
+
+.offer-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer-description h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+}
+
+.offer-description p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.offer-description .offer-discount,
+.offer-description .offer-property-type,
+.offer-description .offer-date {
+  text-align: center;
+}
+
+.offer-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer-status p {
+  color: black;
+  font-size: 18px;
+}
+
+.offer-status label {
+  color: var(--primary1);
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.offer-status .form-check-input {
+  background-color: #dbf0e9 !important;
+  height: 25px;
+  width: 45px !important;
+}
+.offer-status .form-check-input:checked {
+  background-color: var(--primary1) !important;
+  border-color: #52b694 !important;
+}
+
+.offer-status .form-check-input:focus {
+  border-color: #dbf0e9 !important;
+  box-shadow: 0 0 0 0.25rem #b7e1d3 !important;
+}
+
+.property-list .list-nav .nav-card.offers-card {
+  padding: 20px;
+}
+
+#addOffer .offcanvas-body .offer-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#addOffer .offcanvas-body .offer-input input,
+#addOffer .offcanvas-body .offer-input #discount-type {
+  height: 64px;
+  border-radius: 12px;
+  border: 1.5px solid #dbf0e9;
+  padding: 5px;
+  width: 100%;
+}
+
+#addOffer .offcanvas-body .offer-input .choose-discount-type {
+  position: relative;
+}
+
+#addOffer .offcanvas-body .offer-input #discount-type {
+  width: 100%;
+  appearance: none;
+}
+
+#addOffer .offcanvas-body .offer-input i {
+  position: absolute;
+  left: 20px;
+  transform: translateY(-50%);
+  top: 50%;
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#addOffer .offcanvas-body .offer-input .discount-value {
+  position: relative;
+}
+
+#addOffer .offcanvas-body .offer-input .discount-value span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.discount-value {
+  display: flex;
+}
+
+#addOffer .offcanvas-body .offer-input .amount {
+  display: none;
+}
+
+#addOffer .offcanvas-body .offer-input .input-date {
+  position: relative;
+}
+
+#addOffer .offcanvas-body .offer-input .input-date img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Remove the date icon in Chrome, Safari, Edge, and Opera */
+#addOffer .offcanvas-body .offer-input input[type="date"] {
+  appearance: none; /* Standard property */
+  -webkit-appearance: none; /* Chrome, Safari, Edge, Opera */
+  -moz-appearance: textfield; /* Firefox */
+  text-align: end;
+}
+
+/* Remove the date icon for Chrome, Safari, Edge, and Opera specifically */
+#addOffer
+  .offcanvas-body
+  .offer-input
+  input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Remove the date icon in Internet Explorer */
+#addOffer .offcanvas-body .offer-input input[type="date"]::-ms-clear {
+  display: none;
+}
+.add-offers-actions button,
+.add-offers-actions a {
+  width: 100%;
+  height: 64px;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  border-radius: 8px;
+  display: block;
+  font-size: 18px;
+}
+
+.add-offers-actions button {
+  background-color: var(--primary1);
+  color: white;
+}
+
+.add-offers-actions a {
+  color: var(--primary1);
+  border: 1.5px solid var(--primary1);
+}
+
+.offcanvas {
+  --bs-offcanvas-width: 450px !important;
+}
+
+.offcanvas .offcanvas-header h5 {
+  color: var(--gray);
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.offcanvas .offcanvas-header button {
+  color: var(--gray);
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+  margin: 0;
+}
+
+:focus-visible {
+  outline-color: #52b694;
+}
+
+.offcanvas .value-input span {
+  color: var(--primary1);
+}
+
+.rent-property .rent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rent-property .rent p {
+  color: black;
+}
+
+.rent-property .rent span,
+.rent-property .rent a {
+  margin-right: 5px;
+  color: var(--gray);
+}
+
+.rent-property .rent a {
+  color: var(--primary1);
+}
+
+.rent-property .rent.property-rent-code p {
+  color: var(--primary1);
+  background-color: #edf7f4;
+  width: fit-content;
+  margin: 0;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
+/* dskllllllllllllllllllllllj */
 .sub-counter-header {
   width: 140px;
   height: 140px;
@@ -163,6 +1226,7 @@
   transition: all 0.3s linear;
   border: 1px solid var(--color-border);
 }
+
 .product:hover {
   background-color: var(--color-Primary5);
 }
@@ -426,7 +1490,7 @@ button.owl-next {
   grid-auto-rows: minmax(100px, auto);
 }
 .sub-blog-index {
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .sub-blog-index:hover {
@@ -529,7 +1593,6 @@ button.owl-next {
   font-size: 28px;
   vertical-align: middle;
 }
-
 
 section.add__property {
   margin-top: 50px;
@@ -1162,6 +2225,13 @@ section.our__services {
   color: var(--gray);
   font-size: 18px;
   line-height: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .services__img {
@@ -1265,6 +2335,7 @@ section.contact__info .main-container {
   font-weight: 400;
   font-size: 18px;
   color: var(--primary1);
+  flex: 1;
 }
 
 .contact__us__info h3 span {
@@ -1479,7 +2550,7 @@ section.blogs {
   transition: 0.4s;
 }
 
-.blog:hover{
+.blog:hover {
   background-color: var(--color-Primary5);
 }
 
@@ -1500,6 +2571,13 @@ section.blogs {
 .blog p {
   font-size: 18px;
   color: var(--gray);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .blog .frm__btn {
@@ -1696,6 +2774,14 @@ section.blogs {
 
 .retreat__card:hover .retreat__contact {
   background-color: var(--primary2);
+}
+
+.retreat__card:hover .retreat__contact p {
+  color: #fff;
+}
+
+.retreat__card:hover .retreat__contact img {
+  filter: brightness(11);
 }
 
 .retreat__card .owl-carousel {
@@ -2285,15 +3371,15 @@ section.retreat__imgs {
   object-fit: cover;
 }
 
-.grid__img__container .img:nth-child(1) img{
+.grid__img__container .img:nth-child(1) img {
   border-radius: 0 10px 10px 0;
 }
 
-.grid__img__container .img:nth-child(4) img{
+.grid__img__container .img:nth-child(4) img {
   border-radius: 10px 0px 0px 10px;
 }
 
-.grid__img__container .img:nth-child(2) img{
+.grid__img__container .img:nth-child(2) img {
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -2546,8 +3632,8 @@ section.retreat__imgs {
   margin-bottom: 30px;
 }
 
-.opinion:not(:last-child){
-   border-bottom: 1px solid #dbf0e9;
+.opinion:not(:last-child) {
+  border-bottom: 1px solid #dbf0e9;
 }
 
 .opinion .img {
@@ -2565,7 +3651,7 @@ section.retreat__imgs {
   height: 30px;
 }
 
-.opinion .rating{
+.opinion .rating {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -2583,32 +3669,32 @@ section.retreat__imgs {
   font-size: 10px;
 }
 
-.opinion .rating .icons .icon.active{
+.opinion .rating .icons .icon.active {
   color: #ffc416;
 }
 
-.opinion h2{
+.opinion h2 {
   color: var(--primary1);
   margin-bottom: 20px;
   font-size: 24px;
   margin-top: 10px;
 }
 
-.opinion .text-date-des{
+.opinion .text-date-des {
   margin-bottom: 20px;
   color: var(--gray);
 }
 
-section.add__comment{
+section.add__comment {
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
-section.add__comment form{
+section.add__comment form {
   width: 50%;
 }
 
-.comment__btn{
+.comment__btn {
   border: 2px solid var(--primary1);
   color: var(--primary1);
   width: 200px;
@@ -2622,12 +3708,12 @@ section.add__comment form{
   border-radius: 5px;
 }
 
-.comment__btn:hover{
+.comment__btn:hover {
   background-color: var(--primary1);
   color: #fff;
 }
 
-.add__comment textarea{
+.add__comment textarea {
   background-color: var(--color-Primary5);
   border: 2px solid var(--color-Primary5);
   padding: 20px;
@@ -2636,27 +3722,27 @@ section.add__comment form{
   transition: 0.4s;
 }
 
-.add__comment label{
+.add__comment label {
   color: var(--primary2);
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-.add-rating{
+.add-rating {
   display: flex;
   align-items: center;
   gap: 5px;
   margin-top: 15px;
 }
 
-.add-rating .input{
+.add-rating .input {
   cursor: pointer;
   position: relative;
   width: 35px;
   height: 35px;
 }
 
-.add-rating .input label{
+.add-rating .input label {
   width: 100%;
   height: 100%;
   display: flex;
@@ -2667,107 +3753,105 @@ section.add__comment form{
   cursor: pointer;
 }
 
-.add-rating .input label.active{
+.add-rating .input label.active {
   color: #ffc416;
 }
 
-.add-rating .input input{
+.add-rating .input input {
   position: absolute;
   opacity: 0;
 }
 
-.booking_summary{
+.booking_summary {
   border-top: 1px solid #c8c8c8;
   padding-top: 30px;
   margin-top: 20px;
 }
 
-.booking_summary h4{
+.booking_summary h4 {
   font-size: 18px;
   font-weight: 500;
   color: var(--primary2);
 }
 
-.booking_summary .item{
+.booking_summary .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
 }
 
-.booking_summary .item p{
+.booking_summary .item p {
   font-size: 18px;
   font-family: 400px;
 }
 
-
-.booking_summary .item p span{
+.booking_summary .item p span {
   color: red;
 }
 
-.money{
+.money {
   text-align: center;
   color: var(--primary1);
   font-weight: 600;
 }
 
-.paymeny_way h6{
-   font-size: 18px;
-   font-weight: 400;
-   color: var(--primary2);
-   margin-top: 20px;
+.paymeny_way h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary2);
+  margin-top: 20px;
 }
 
-.paymeny_way{
+.paymeny_way {
   margin-top: 50px;
   padding: 20px;
 }
 
-.paymeny_way .way{
+.paymeny_way .way {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-top: 10px;
 }
 
-.paymeny_way .way:not(:last-child){
+.paymeny_way .way:not(:last-child) {
   border-bottom: 1px solid #c8c8c8;
 }
 
-.paymeny_way .way label{
+.paymeny_way .way label {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
 }
 
-.paymeny_way .way label .text{
+.paymeny_way .way label .text {
   display: flex;
   flex-direction: column;
 }
 
-.paymeny_way .way img{
+.paymeny_way .way img {
   width: 90px;
   height: 40px;
 }
 
-.paymeny_way .way label h4{
+.paymeny_way .way label h4 {
   font-size: 20px;
   font-weight: 500;
   color: var(--gray);
 }
 
-.paymeny_way .way label p{
-   font-size: 18px;
-   font-weight: 400;
+.paymeny_way .way label p {
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.paymeny_way .frm__btn{
+.paymeny_way .frm__btn {
   width: 100%;
 }
 
-
-.problem__type{
+.problem__type {
   position: relative;
   border: 1px solid #dbf0e9;
   width: 100%;
@@ -2783,7 +3867,7 @@ section.add__comment form{
   color: var(--gray);
 }
 
-.problem__type select{
+.problem__type select {
   border: none;
   width: 100%;
   height: 100%;
@@ -2793,17 +3877,17 @@ section.add__comment form{
   font-weight: 400;
 }
 
-.problem__type select option{
+.problem__type select option {
   font-size: 18px;
   font-weight: 400;
   color: var(--gray);
 }
 
-.main__problem{
+.main__problem {
   margin: 20px 0;
 }
 
-.main__problem textarea{
+.main__problem textarea {
   display: block;
   width: 100%;
   height: 120px;
@@ -2813,17 +3897,17 @@ section.add__comment form{
   border: 1px solid #dbf0e9;
 }
 
-.moadal__btns{
+.moadal__btns {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.moadal__btns .frm__btn{
+.moadal__btns .frm__btn {
   width: 50%;
 }
 
-section.notifications{
+section.notifications {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -2840,11 +3924,11 @@ section.notifications{
   margin-bottom: 20px;
 }
 
-.notification:hover{
+.notification:hover {
   background-color: var(--color-Primary5);
 }
 
-.notification .img{
+.notification .img {
   width: 65px;
   height: 65px;
   background-color: var(--primary1);
@@ -2854,27 +3938,27 @@ section.notifications{
   justify-content: center;
 }
 
-.notification .img img{
+.notification .img img {
   width: 35px;
   height: 30px;
 }
 
-.notification .text{
+.notification .text {
   flex: 1;
 }
 
-.notification .text p{
+.notification .text p {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.notification .text .date{
+.notification .text .date {
   font-size: 18px;
   color: var(--primary2);
 }
 
-.delete_note{
+.delete_note {
   width: 40px;
   height: 40px;
   color: var(--gray);
@@ -2888,13 +3972,13 @@ section.notifications{
   transition: 0.4s;
 }
 
-.delete_note:hover{
+.delete_note:hover {
   background-color: var(--primary1);
   color: #fff;
   animation: rubberBand infinite 1s;
 }
 
-.notifications__menu{
+.notifications__menu {
   position: absolute;
   top: 212px;
   background-color: #fff;
@@ -2902,29 +3986,31 @@ section.notifications{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  left: -110%;
+  left: 66px;
   border-radius: 10px;
   width: 270px;
   transition: 0.4s;
-  z-index: 9999999999999;
+  z-index: -1;
+  opacity: 0;
 }
 
-.notifications__menu.show{
-  left: 66px;
+.notifications__menu.show {
+  opacity: 1;
+  z-index: 999999999999;
 }
 
-.notifications__menu a{
+.notifications__menu a {
   color: var(--gray);
   transition: 0.4s;
   position: relative;
   width: fit-content;
 }
 
-.notifications__menu a.log{
+.notifications__menu a.log {
   color: var(--primary1);
 }
 
-.notifications__menu a.active::before{
+.notifications__menu a.active::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2935,10 +4021,342 @@ section.notifications{
   background-color: red;
 }
 
-.notifications__menu a.log span{
+.notifications__menu a.log span {
   margin-left: 10px;
 }
 
-.notifications__menu a:hover{
+.notifications__menu a:hover {
   color: var(--primary1);
+}
+
+.user__img__profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-Primary5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user__img__profile img {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.rating__card {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  transition: 0.4s;
+}
+
+.rating__card:hover {
+  background-color: var(--color-Primary5);
+}
+
+.rating__card:hover .user__img__profile {
+  background-color: #fff;
+}
+
+.rating__card:hover .rating__hrader {
+  border-color: #fff;
+}
+
+.rating__hrader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-Primary5);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.rating__hrader p {
+  color: var(--primary2) !important;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.rating__hrader h2 {
+  color: var(--primary1);
+}
+
+.rating__card__content {
+  display: flex;
+  gap: 20px;
+}
+
+.rating__card__content .text {
+  flex: 1;
+}
+
+.rating__card .stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars .icons i.active {
+  color: #ffc416 !important;
+}
+
+.stars .icons i {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+.rating__card .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.rating__card .name h2 {
+  color: var(--primary1);
+  font-size: 24px;
+}
+
+.rating__card .name h2.prop_name {
+  color: var(--primary2);
+  font-size: 18px;
+}
+
+.rating__card .name p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.rating__card .desc {
+  color: var(--gray);
+  line-height: 1.7;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p.retreat_name {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+p.retreat_name span {
+  color: var(--primary2);
+}
+
+.paymen-user-way-add {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymen-user-way-add p:nth-child(1) {
+  color: var(--primary2);
+}
+
+.paymen-user-way-add .frm__btn {
+  width: 120px;
+  margin: 0;
+}
+
+.money-add-item {
+  margin-bottom: 20px;
+}
+
+.money-add-item label {
+  color: var(--primary2);
+  font-size: 20px;
+}
+
+.money-add-item .input {
+  position: relative;
+  border: 1px solid var(--color-Primary5);
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+
+.money-add-item .input input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+  color: var(--gray);
+}
+
+.money-add-item .input select {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+  color: var(--gray) !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
+}
+
+.money-add-item .input select option {
+  color: var(--gray) !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+}
+
+.money-add-item .input .icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray);
+}
+
+.money-add-item .input span {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary2);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btns__money {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btns__money .frm__btn {
+  width: 50%;
+}
+
+/* edit in css ahmed */
+
+.property-profile .property-list .nav button:hover {
+  background-color: var(--color-Primary5);
+  color: var(--primary1);
+}
+
+.property-list .list-nav .nav-card:hover {
+  background-color: var(--color-Primary5);
+}
+
+.property-list .list-nav .nav-card:hover .offers-card-header a {
+  background-color: #fff;
+}
+
+.offers-card-header a:hover {
+  animation: rubberBand infinite 1s;
+}
+
+.property-profile aside .profile-links ul li a {
+  color: var(--color-gray);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.property-profile aside .profile-links .add-property:hover {
+  background-color: var(--primary1);
+  color: #fff;
+}
+
+.form-check.form-switch input {
+  cursor: pointer;
+}
+
+.offers-cards-header button:hover {
+  background-color: var(--primary1);
+  color: #fff;
+}
+
+.btn-product:hover a {
+  background-color: var(--primary2);
+  color: #fff;
+}
+
+.product.no-animation {
+  animation: none;
+  margin-bottom: 20px;
+}
+
+.advertiseCarousel {
+  direction: ltr;
+}
+
+.advertiseCarousel .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.advertiseCarousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  display: block !important;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  position: relative;
+  top: -25px;
+}
+
+.advertiseCarousel .owl-dots .owl-dot.active{
+  background-color: #fff;
+}
+
+.advertise-links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 99;
+}
+
+.advertise-links .icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: var(--color-Primary5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advertise-links .icon img {
+  width: 25px;
+  height: 25px;
+}
+
+.advertise-links .icon:hover img{
+  animation: rubberBand infinite 1s;
+}
+
+.card-header p{
+  color: var(--primary1);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-header p:nth-child(2){
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* edit index */
+
+.nav-pills .nav-link:hover {
+  background-color: var(--primary1);
+}
+
+.nav-pills .nav-link:hover h3 {
+  color: #fff;
+}
+
+.nav-pills .nav-link:hover img {
+  filter: brightness(11);
 }
