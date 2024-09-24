@@ -187,7 +187,6 @@
   right: 10px;
 }
 
-
 .login .login-form form a,
 .register .register-form a,
 .forget-password .forget-form form a {
@@ -279,8 +278,8 @@ form button:hover::before,
 .login .login-form .login-links .col:hover::after,
 .login .login-form .login-links .col:hover::before,
 .register .register-form .register-links .col:hover::before,
-.add-property:hover::before ,
-.ctm-btn:hover::before{
+.add-property:hover::before,
+.ctm-btn:hover::before {
   height: 800%;
 }
 
@@ -403,12 +402,12 @@ form button:hover::before,
   padding: 0 20px;
 }
 .forget-form form .input-check-code input {
-  width: 75px ;
-  height: 75px ;
+  width: 75px;
+  height: 75px;
   font-size: 24px;
   text-align: center;
   border-radius: 50%;
-  padding: 0 ;
+  padding: 0;
   background-color: #edf7f482;
 }
 
@@ -538,7 +537,7 @@ form button:hover::before,
 .property-list .list-nav .nav-card {
   border: 1px solid #dbf0e9;
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px;
   color: var(--gray);
   margin: 20px 0;
 }
@@ -841,9 +840,10 @@ hr {
 }
 
 .offer-description p {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
   color: var(--gray);
+  margin-top: 10px;
 }
 
 .offer-description .offer-discount,
@@ -987,6 +987,7 @@ hr {
 .add-offers-actions button {
   background-color: var(--primary1);
   color: white;
+  font-weight: 500;
 }
 
 .add-offers-actions a {
@@ -1049,24 +1050,6 @@ hr {
   border-radius: 5px;
 }
 
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
-/* dskllllllllllllllllllllllj */
 .sub-counter-header {
   width: 140px;
   height: 140px;
@@ -2041,7 +2024,7 @@ section.add__advertise {
 
 section.about__us {
   display: flex;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
   gap: 30px;
 }
@@ -2071,7 +2054,7 @@ section.about__us {
   position: absolute;
   width: 48%;
   height: 400px;
-  top: 0px;
+  top: -50px;
   left: 0px;
   right: auto;
 }
@@ -2080,7 +2063,7 @@ section.about__us {
   position: absolute;
   width: 48%;
   height: 190px;
-  top: 420px;
+  top: 370px;
   left: 0px;
   right: auto;
 }
@@ -2152,6 +2135,14 @@ section.our__vision {
   color: var(--gray);
   font-size: 20px;
   line-height: 2;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .section__img {
@@ -2185,6 +2176,11 @@ section.our__vision {
 section.our__services {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+section.our__services h2{
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .all__services {
@@ -3009,6 +3005,10 @@ section.blogs {
   margin-bottom: 20px;
 }
 
+.retreat__space__title p {
+  color: var(--primary2);
+}
+
 .retreat__space input {
   width: 100%;
   border-radius: 10px;
@@ -3064,18 +3064,6 @@ section.blogs {
 .retreat__kind__inputs label img {
   width: 40px;
   height: 40px;
-}
-
-.retreat__kind__inputs label:hover {
-  background-color: var(--primary1);
-}
-
-.retreat__kind__inputs label:hover p {
-  color: #fff;
-}
-
-.retreat__kind__inputs label:hover img {
-  filter: brightness(11);
 }
 
 .retreat__kind__inputs input[type="checkbox"]:checked + label {
@@ -3257,7 +3245,23 @@ section.blogs {
 }
 
 .frm__btns button {
-  width: 40%;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+button.custom__hov {
+  background-color: #fff;
+  border-color: var(--primary1);
+  color: var(--primary1);
+}
+
+button.custom__hov::before {
+  background-color: var(--primary1);
+}
+
+button.custom__hov:hover {
+  color: #fff !important;
 }
 
 form.left-modal-form {
@@ -4306,7 +4310,7 @@ p.retreat_name span {
   top: -25px;
 }
 
-.advertiseCarousel .owl-dots .owl-dot.active{
+.advertiseCarousel .owl-dots .owl-dot.active {
   background-color: #fff;
 }
 
@@ -4336,17 +4340,17 @@ p.retreat_name span {
   height: 25px;
 }
 
-.advertise-links .icon:hover img{
+.advertise-links .icon:hover img {
   animation: rubberBand infinite 1s;
 }
 
-.card-header p{
+.card-header p {
   color: var(--primary1);
   font-size: 20px;
   font-weight: 500;
 }
 
-.card-header p:nth-child(2){
+.card-header p:nth-child(2) {
   color: var(--gray);
   font-size: 18px;
   font-weight: 400;
@@ -4364,4 +4368,14 @@ p.retreat_name span {
 
 .nav-pills .nav-link:hover img {
   filter: brightness(11);
+}
+
+.no-border {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+form.add-offers-frm {
+  padding-right: 20px;
 }

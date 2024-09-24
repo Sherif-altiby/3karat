@@ -27,7 +27,7 @@
   }
 
   .about__us__img .img:nth-child(3) {
-    top: 370px;
+    top: 320px;
   }
 
   .img__des {
@@ -75,8 +75,6 @@
     text-decoration: none;
   }
 
-
-
   .login .login-form-header a,
   .register .register-form .register-form-header a,
   .forget-password .login-form-header a {
@@ -91,16 +89,14 @@
   .forget-password .forget-form form button,
   form button {
     font-size: 20px;
-   
   }
   .login .login-header p,
-.register .register-header p,
-.forget-password .forget-password-header p,
-.reset-password .reset-password-header p {
-  font-size: 20px;
-  font-weight: 600;
-}
-
+  .register .register-header p,
+  .forget-password .forget-password-header p,
+  .reset-password .reset-password-header p {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -343,8 +339,6 @@
   .paymen-user-way-add {
     margin-top: 50px;
   }
-
-
 }
 
 @media (max-width: 768px) {
@@ -422,7 +416,7 @@
 
   .card__servises {
     padding: 15px;
-    height: 240px;
+    height: 180px;
   }
 
   .card__servises h3 {
@@ -431,10 +425,12 @@
 
   .card__servises h3 {
     font-size: 15px;
+    margin-bottom: 10px;
   }
 
   .services__img {
-    height: 500px;
+    height: 380px;
+    /* display: none; */
   }
 
   .form__contact__us {
@@ -531,8 +527,6 @@
     text-decoration: none;
   }
 
-
-
   .login .login-form-header a,
   .register .register-form .register-form-header a,
   .forget-password .login-form-header a {
@@ -547,7 +541,6 @@
   .forget-password .forget-form form button,
   form button {
     font-size: 18px;
-   
   }
   .login .login-header p,
   .register .register-header p,
@@ -556,14 +549,15 @@
     font-size: 18px;
     font-weight: 600;
   }
-  .forget-password .forget-password-header, .reset-password .reset-password-header {
+  .forget-password .forget-password-header,
+  .reset-password .reset-password-header {
     gap: 20px;
   }
 
-  .forget-password .forget-form, .reset-password .reset-form {
-   
+  .forget-password .forget-form,
+  .reset-password .reset-form {
     gap: 40px;
-}
+  }
 }
 
 @media (max-width: 650px) {
@@ -717,30 +711,69 @@
     text-align: center;
   }
 
-  
   .forget-form form .input-check-code {
-    
     padding: 0 10px;
     gap: 5px;
   }
   .forget-form form .input-check-code input {
-    width: 60px ;
-    height: 60px ;
+    width: 60px;
+    height: 60px;
     font-size: 20px;
-    
   }
-  
-  .forget-password .forget-password-header p:last-child{
+
+  .forget-password .forget-password-header p:last-child {
     text-align: center;
-  } 
-  .login .login-header{
+  }
+  .login .login-header {
     flex-wrap: wrap;
     align-items: center;
-    
   }
-  .login .login-header p{
+  .login .login-header p {
     text-align: center;
     line-height: 1.8;
+  }
+
+  .our__message .row {
+    flex-direction: column-reverse;
+  }
+
+  .our__vision p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .our__vision h2 {
+    text-align: center;
+  }
+
+  .our__vision .img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section__img {
+    margin-top: 60px;
+    margin-left: auto;
+  }
+
+  .make__pagination .nums .num {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .make__pagination .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .make__pagination {
+    gap: 15px;
+  }
+
+  .make__pagination .nums {
+    gap: 5px;
   }
 }
 
@@ -859,18 +892,17 @@
     grid-gap: 10px;
   }
   .forget-form form .input-check-code {
-    
     padding: 0px;
     gap: 5px;
   }
   .forget-form form .input-check-code input {
-    width: 50px ;
-    height: 50px ;
+    width: 50px;
+    height: 50px;
     font-size: 20px;
-    
   }
 
-  .login .login-form .login-links .row, .register .register-form .register-links .row {
+  .login .login-form .login-links .row,
+  .register .register-form .register-links .row {
     gap: 15px;
     margin: 20px 0px 0;
     align-items: center;
@@ -878,35 +910,16 @@
     flex-direction: column;
   }
 
-  .login .login-form .login-links .col, .register .register-form .register-links .col {
+  .login .login-form .login-links .col,
+  .register .register-form .register-links .col {
     padding: 19px 0;
   }
-
 }
 
 @media (max-width: 425px) {
   .property__desc form input[type="submit"] {
     height: 50px;
     width: 179px;
-  }
-
-  .section__img {
-    margin-top: 60px;
-    margin-left: auto;
-  }
-
-  .our__vision p {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .our__vision h2 {
-    text-align: center;
-  }
-
-  .our__vision .img {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .about__us__img .img {
@@ -976,7 +989,6 @@
   .sub__header p {
     font-size: 16px;
   }
-  
 }
 
 @media (max-width: 376px) {
@@ -1006,14 +1018,16 @@
   /* dddddddddddddddddddddddddddddddddd */
   /* dddddddddddddddddddddddddddddddddd */
 
-
   .forget-form form .input-check-code input {
-    width: 45px ;
-    height: 45px ;
+    width: 45px;
+    height: 45px;
     font-size: 20px;
-    
   }
-  .login .login-form, .register .register-form, .logOut .logOut-form, .forget-password .forget-form, .reset-password .reset-form {
+  .login .login-form,
+  .register .register-form,
+  .logOut .logOut-form,
+  .forget-password .forget-form,
+  .reset-password .reset-form {
     padding: 30px 25px;
   }
 }
