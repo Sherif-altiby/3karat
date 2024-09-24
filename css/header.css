@@ -167,6 +167,7 @@
   min-width: 150px;
   border-radius: 10px;
   color: var(--color-white);
+  position: relative;
 }
 
 .ctm-btn i {
@@ -176,7 +177,7 @@
 }
 
 .ctm-btn:hover {
-  color: var(--color-white);
+  color: var(--color-Primary1);
   background-color: var(--color-Primary2);
 }
 
@@ -256,12 +257,6 @@
   padding-left: 55px;
   height: 65px;
 }
-.search-header input:focus ~ button {
-  transform: rotate(-45deg);
-}
-.search-header input:focus ~ button i {
-  transform: rotate(45deg);
-}
 
 .search-header button {
   position: absolute;
@@ -275,13 +270,20 @@
   color: var(--color-white);
   position: absolute;
   left: 10px;
-  top: 10px;
+  top: 50%;
   border: transparent;
   border-radius: 10px;
+  transform: translateY(-50%) rotate(0deg);
 }
-.search-header button:hover {
-  background-color: var(--color-Primary2);
+
+.search-header input:focus ~ button {
+  transform: translateY(-50%) rotate(-45deg);
 }
+.search-header input:focus ~ button i {
+  transform: rotate(45deg);
+}
+
+
 .search-header > i {
   position: absolute;
   top: 22px;

@@ -66,6 +66,41 @@
   }
 
   /* ahmmmmmmmmmmmmmmmmmmmmmmed */
+  .login .login-header a,
+  .register .register-header a,
+  .forget-password .forget-password-header a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary1);
+    text-decoration: none;
+  }
+
+
+
+  .login .login-form-header a,
+  .register .register-form .register-form-header a,
+  .forget-password .login-form-header a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #8d8f95;
+    position: relative;
+    text-decoration: none;
+  }
+  .login .login-form form button,
+  .register .register-form form button,
+  .forget-password .forget-form form button,
+  form button {
+    font-size: 20px;
+   
+  }
+  .login .login-header p,
+.register .register-header p,
+.forget-password .forget-password-header p,
+.reset-password .reset-password-header p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 }
 
 @media (max-width: 1200px) {
@@ -308,6 +343,8 @@
   .paymen-user-way-add {
     margin-top: 50px;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -484,6 +521,49 @@
     grid-template-rows: repeat(2, 200px);
     grid-gap: 10px;
   }
+
+  .login .login-header a,
+  .register .register-header a,
+  .forget-password .forget-password-header a {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary1);
+    text-decoration: none;
+  }
+
+
+
+  .login .login-form-header a,
+  .register .register-form .register-form-header a,
+  .forget-password .login-form-header a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8d8f95;
+    position: relative;
+    text-decoration: none;
+  }
+  .login .login-form form button,
+  .register .register-form form button,
+  .forget-password .forget-form form button,
+  form button {
+    font-size: 18px;
+   
+  }
+  .login .login-header p,
+  .register .register-header p,
+  .forget-password .forget-password-header p,
+  .reset-password .reset-password-header p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .forget-password .forget-password-header, .reset-password .reset-password-header {
+    gap: 20px;
+  }
+
+  .forget-password .forget-form, .reset-password .reset-form {
+   
+    gap: 40px;
+}
 }
 
 @media (max-width: 650px) {
@@ -636,6 +716,32 @@
   .contact__us__info p {
     text-align: center;
   }
+
+  
+  .forget-form form .input-check-code {
+    
+    padding: 0 10px;
+    gap: 5px;
+  }
+  .forget-form form .input-check-code input {
+    width: 60px ;
+    height: 60px ;
+    font-size: 20px;
+    
+  }
+  
+  .forget-password .forget-password-header p:last-child{
+    text-align: center;
+  } 
+  .login .login-header{
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+  .login .login-header p{
+    text-align: center;
+    line-height: 1.8;
+  }
 }
 
 @media (max-width: 576px) {
@@ -752,6 +858,30 @@
     grid-template-rows: repeat(2, 150px);
     grid-gap: 10px;
   }
+  .forget-form form .input-check-code {
+    
+    padding: 0px;
+    gap: 5px;
+  }
+  .forget-form form .input-check-code input {
+    width: 50px ;
+    height: 50px ;
+    font-size: 20px;
+    
+  }
+
+  .login .login-form .login-links .row, .register .register-form .register-links .row {
+    gap: 15px;
+    margin: 20px 0px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .login .login-form .login-links .col, .register .register-form .register-links .col {
+    padding: 19px 0;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -846,9 +976,10 @@
   .sub__header p {
     font-size: 16px;
   }
+  
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .retreat__title {
     flex-direction: column;
   }
@@ -874,4 +1005,15 @@
   /* dddddddddddddddddddddddddddddddddd */
   /* dddddddddddddddddddddddddddddddddd */
   /* dddddddddddddddddddddddddddddddddd */
+
+
+  .forget-form form .input-check-code input {
+    width: 45px ;
+    height: 45px ;
+    font-size: 20px;
+    
+  }
+  .login .login-form, .register .register-form, .logOut .logOut-form, .forget-password .forget-form, .reset-password .reset-form {
+    padding: 30px 25px;
+  }
 }
