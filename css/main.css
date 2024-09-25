@@ -233,19 +233,6 @@ form button::before,
   transition: all 1s ease;
 }
 
-/* .login .login-form form button::after,
-.forget-password .forget-form form button::after{
-  content: '';
-  position: absolute;
-  width:0px;
-  height: 600px;
-  background-color:white;
-  top: -200px;
-  left: 40%;
-  transform: translateX( -40%) rotate(45deg);
-  transition: 1s;
-
-} */
 
 .login .login-form form button p,
 .register .register-form form button p,
@@ -4354,6 +4341,26 @@ p.retreat_name span {
   color: var(--gray);
   font-size: 18px;
   font-weight: 400;
+}
+
+.nav-card h5{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.log-out-btn{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.log-out-btn-exit{
+  background-color: #fff !important;
+  color: var(--primary1) !important;
+  border:  1px solid var(--primary1) !important;
+}
+
+button.btn-register-hover:hover::before{
+  height: 950% !important;
 }
 
 /* edit index */

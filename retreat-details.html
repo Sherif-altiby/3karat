@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.magnific-popup/1.1.0/magnific-popup.css">
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/lightgallery-bundle.min.css">
@@ -116,13 +118,13 @@
                       <li><a href="/">الرئيسية</a></li>
                       <li><a href="/aboutus.html"> من نحن </a></li>
                       <li><a href="/retreat.html"> العقارات </a></li>
-                      <li><a href="/blogs.html"> اخر الاخبار </a></li>
+                       
                       <li><a href="/contactus.html">تواصل معنا </a></li>
                        <li><a href=""> <i class="bi bi-globe"></i> اللغة العربية</a></li>
                   </ul>
               </div>
               <div class="btn-nav-bar">
-                  <a href="" class="ctm-btn"> <i class="bi bi-plus-lg"></i> اعلن عن عقارك </a>
+                  <a href="/property-desc.html" class="ctm-btn"> <i class="bi bi-plus-lg"></i> اعلن عن عقارك </a>
                   <div class="btn-user toggle-menu-note"> <i class="bi bi-person"></i> <span class="num-user">2</span></div>
                   <div class="menu-div btn-user">
                       <div class="content" id="times-ican">
@@ -181,12 +183,12 @@
                   </div>
            </div>
 
-           <div class="grid__img__container">
-                <div class="img"> <img src="./images/i-1.png" alt="img"> </div>
-                <div class="img"> <img src="./images/i-2.png" alt="img"> </div>
-                <div class="img"> <img src="./images/i-3.png" alt="img"> </div>
-                <div class="img"> <img src="./images/i-4.png" alt="img"> </div>
-                <div class="img"> <img src="./images/i-5.png" alt="img"> </div>
+           <div class="grid__img__container gallery">
+                <a class="img popup-link"> <img src="./images/i-1.png" alt="img"> </a>
+                <a class="img popup-link"> <img src="./images/i-2.png" alt="img"> </a>
+                <a class="img popup-link"> <img src="./images/i-3.png" alt="img"> </a>
+                <a class="img popup-link"> <img src="./images/i-4.png" alt="img"> </a>
+                <a class="img popup-link"> <img src="./images/i-5.png" alt="img"> </a>
 
                 <div class="show-more"> عرض المزيد من الصور (20) </div>
            </div>
@@ -500,7 +502,7 @@
       <div class="end-page">
           <div class="main-container">
               <p> كل الحقوق محفوظة 2024 &copy; لشركة Retreat apartments</p>
-              <a href="">صنع بكل حب <i class="bi bi-heart-fill"></i> في معامل جدارة </a>
+              <a href="https://jaadara.com/" target="_blank">صنع بكل حب <i class="bi bi-heart-fill"></i> في معامل جدارة </a>
 
           </div>
       </div>
@@ -518,14 +520,14 @@
               <li><a href="/">الرئيسية</a></li>
               <li><a href="/aboutus.html"> من نحن </a></li>
               <li><a href="/retreat.html"> العقارات </a></li>
-              <li><a href="/blogs.html"> اخر الاخبار </a></li>
+               
               <li><a href="/contactus.html">تواصل معنا </a></li>
                <li><a href=""> <i class="bi bi-globe"></i> اللغة العربية</a></li>
           </ul>
       </div>
 
       <div class="btn-mune-res">
-          <a href="" class="ctm-btn"> + اعلن عن عقارك </a>
+           <a href="/property-desc.html" class="ctm-btn"> + اعلن عن عقارك </a>
       </div>
       <div class="remove-mune">
           <span></span>
@@ -573,7 +575,7 @@
 <section class="notifications__menu custom__shadow " >
     <a href="/notification.html" class="active" > الاشعارات  </a>
     <a href="/profile-editing-data.html"> الحساب  </a>
-    <a href="/notification.html"> تواصل معنا  </a>
+     <a href="/contactus.html"> تواصل معنا  </a>
     <a href="/log-out.html" class="log" > <span> - </span> تسجيل الخروج  </a>
 </section>
 
@@ -595,11 +597,27 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+<!-- jQuery must be loaded first -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.0/lightgallery.min.js"></script>
+<!-- Then load Magnific Popup -->
+<script src="https://cdn.jsdelivr.net/jquery.magnific-popup/1.1.0/jquery.magnific-popup.min.js"></script>
+
      
     <script src="js/videos.js"></script>
 
     <script src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('.popup-link').magnificPopup({
+            type: 'image',  
+            gallery: {
+              enabled: true  
+            }
+          });
+        });
+      </script>
+      
   </body>
 </html>
