@@ -4353,6 +4353,17 @@ p.retreat_name span {
   font-weight: 500;
 }
 
+.w_250px{
+  width: 250px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.normal__font{
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .log-out-btn-exit{
   background-color: #fff !important;
   color: var(--primary1) !important;
