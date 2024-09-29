@@ -126,6 +126,15 @@
   align-items: center;
   z-index: 1;
 }
+
+.element ul li a.active {
+  color: var(--color-Primary1);
+}
+
+.element ul li a.active::after {
+  opacity: 1;
+}
+
 .element ul li a::after {
   content: "";
   position: absolute;
@@ -228,6 +237,10 @@
   width: 50%;
   padding: 70px 0;
 }
+
+.text-hero h1 {
+  color: var(--color-Primary2);
+}
 .text-hero h1 span {
   display: block;
   color: var(--color-Primary1);
@@ -282,7 +295,6 @@
 .search-header input:focus ~ button i {
   transform: rotate(45deg);
 }
-
 
 .search-header > i {
   position: absolute;
