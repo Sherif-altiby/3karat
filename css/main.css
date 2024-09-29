@@ -2153,6 +2153,8 @@ section.our__services {
 section.our__services h2 {
   text-align: center;
   margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .all__services {
@@ -2363,6 +2365,8 @@ section.contact__form {
   text-align: center;
   color: var(--primary2);
   margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .form__contact__us input {
@@ -2398,6 +2402,7 @@ section.contact__form {
 .form__contact__us button {
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
 section.blogs {
@@ -4516,11 +4521,17 @@ form.add-offers-frm {
 
 .time_date span {
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background-color: var(--primary1);
   color: #fff;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .message__header {
@@ -4549,6 +4560,11 @@ form.add-offers-frm {
   background-color: #66f141;
 }
 
+section.chat {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 .message__header .img img {
   width: 100%;
   height: 100%;
@@ -4557,6 +4573,20 @@ form.add-offers-frm {
 
 .all__messages {
   padding-top: 20px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.all__messages::-webkit-scrollbar-thumb {
+  width: 0;
+}
+
+.all__messages::-webkit-scrollbar-track {
+  width: 0;
+}
+
+.all__messages::-webkit-scrollbar {
+  width: 0;
 }
 
 .sended__message {
@@ -4572,4 +4602,61 @@ form.add-offers-frm {
 
 .recieved__message {
   display: flex;
+  margin-left: auto;
+  gap: 10px;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
+.recieved__message img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.recieved__message p {
+  width: 240px;
+  background-color: var(--color-Primary5);
+  border-radius: 30px 30px 30px 0px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: var(--primary2);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.send__message__input {
+  display: flex;
+  gap: 20px;
+}
+
+.send__message__input .input {
+  flex: 1;
+  border: 1px solid var(--primary6);
+  position: relative;
+  height: 60px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.send__message__input .input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-right: 20px;
+  font-size: 17px;
+  color: var(--gray);
+}
+
+.record__message {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 50%;
+  background-color: var(--primary1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
 }
