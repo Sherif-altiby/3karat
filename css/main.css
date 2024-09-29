@@ -4497,3 +4497,79 @@ form.add-offers-frm {
   bottom: 20px;
   background-color: #66f141;
 }
+
+.user__info .text h2 {
+  font-size: 20px;
+  color: var(--primary2);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.user__info .text p {
+  font-size: 14px;
+}
+
+.time_date {
+  color: var(--primary1);
+  text-align: center;
+}
+
+.time_date span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary1);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.message__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--primary6);
+}
+
+.message__header .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.message__header .img::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  right: 2px;
+  bottom: 7px;
+  background-color: #66f141;
+}
+
+.message__header .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.all__messages {
+  padding-top: 20px;
+}
+
+.sended__message {
+  width: 240px;
+  background-color: #f5f5f5;
+  border-radius: 30px 30px 0 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: var(--primary1);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.recieved__message {
+  display: flex;
+}
