@@ -1,5 +1,3 @@
-
-
 setTimeout(() => {
   $(".loading").fadeOut(1000);
 }, 1000);
@@ -14,7 +12,6 @@ lightGallery(document.getElementById("lightgallery"), {
   thumbnail: true,
   selector: ".image-item",
 });
-
 
 $(".text-ask-aboutus ul li h2").click(function (e) {
   e.preventDefault();
@@ -68,53 +65,48 @@ if ($("#slider-client").length) {
   });
 }
 
+$("#contactSlider").owlCarousel({
+  loop: true,
+  margin: 10,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+  },
+});
 
- 
-  $("#contactSlider").owlCarousel({
-    loop: true,
-    margin: 10,
-    dots: true,
-    autoplay: true,   
-    autoplayTimeout: 3000, 
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-         items: 1 
-      },      
-    }
-  });
+$(".retreatSlider").owlCarousel({
+  loop: true,
+  margin: 10,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 4000,
+  smartSpeed: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+  },
+});
 
-
-  $(".retreatSlider").owlCarousel({
-    loop: true,
-    margin: 10,
-    dots: true,
-    autoplay: true,   
-    autoplayTimeout: 4000, 
-    smartSpeed:2000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-         items: 1 
-      },      
-    }
-  });
-  
-  $(".advertiseCarousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    dots: true,
-    autoplay: true,   
-    autoplayTimeout: 3000, 
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-         items: 1 
-      },      
-    }
-  });
-  
-
+$(".advertiseCarousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+  },
+});
 
 if ($("#slider-customer").length) {
   $("#slider-customer").owlCarousel({
@@ -126,7 +118,7 @@ if ($("#slider-customer").length) {
     autoplayHoverPause: false,
     rtl: true,
     autoplay: true,
-    
+
     autoplayHoverPause: true,
     dots: false,
     smartSpeed: 700,
@@ -144,8 +136,6 @@ if ($("#slider-customer").length) {
     },
   });
 }
-
-
 
 $(".remove_mune").click(function () {
   $("#menu-div").removeClass("active");
@@ -209,9 +199,6 @@ $winl.on("click.Bst", function (event) {
   }
 });
 
-
-
-
 const counters = document.querySelectorAll(".counter-header");
 counters.forEach((counter) => {
   counter.innerText = "0";
@@ -226,9 +213,6 @@ counters.forEach((counter) => {
   };
   updateCounter();
 });
-
-
-
 
 if ($(".counter").length) {
   var a = 0;
@@ -306,215 +290,191 @@ if ($(".counter").length) {
   });
 }
 
-
-
-AOS.init(
-  {
-    once: true
-  }
-);
-
+AOS.init({
+  once: true,
+});
 
 //  user image change
 const fileInputs = document.querySelectorAll(
-    ".upload__img__container .add__photo input"
-  );
-  const selectedImages = document.querySelectorAll(
-    ".upload__img__container .add__photo img"
-  );
-  
-  if(fileInputs){
-        fileInputs.forEach((input, index) => {
-          input.addEventListener("change", function (event) {
-            const file = event.target.files[0];
-        
-            if (file && file.type.startsWith("image/")) {
-              selectedImages[index].src = URL.createObjectURL(file);
-            }
-          });
-        });
-  }
+  ".upload__img__container .add__photo input"
+);
+const selectedImages = document.querySelectorAll(
+  ".upload__img__container .add__photo img"
+);
 
+if (fileInputs) {
+  fileInputs.forEach((input, index) => {
+    input.addEventListener("change", function (event) {
+      const file = event.target.files[0];
 
-  // user choose time 
-  const timeInputs = document.querySelectorAll('.timeInput');
-  const placeholders = document.querySelectorAll('.time-placeholder');
-
-  const dateInputs = document.querySelectorAll('.arrive__card input');
-  const datePlaceHolders = document.querySelectorAll(".date-placeholder")
-    
-  if (timeInputs) {
-    timeInputs.forEach((input, index) => {
-      const placeholder = placeholders[index]; 
-  
-      input.addEventListener('focus', function () {
-        if (input.showPicker) {
-          input.showPicker(); 
-        }
-      });
-  
-      input.addEventListener('input', function () {
-        if (input.value) {
-          placeholder.style.opacity = '0'; 
-          placeholder.style.visibility = 'hidden';
-        } else {
-          placeholder.style.opacity = '1'; 
-          placeholder.style.visibility = 'visible';
-        }
-      });
+      if (file && file.type.startsWith("image/")) {
+        selectedImages[index].src = URL.createObjectURL(file);
+      }
     });
+  });
+}
 
-    placeholders.forEach((span, index) => {
-      span.addEventListener('click', (e) => {
-        if (input[index].showPicker) {
-          input[index].showPicker(); 
-        }
-      })
-    })
-  }
+// user choose time
+const timeInputs = document.querySelectorAll(".timeInput");
+const placeholders = document.querySelectorAll(".time-placeholder");
 
+const dateInputs = document.querySelectorAll(".arrive__card input");
+const datePlaceHolders = document.querySelectorAll(".date-placeholder");
 
+if (timeInputs) {
+  timeInputs.forEach((input, index) => {
+    const placeholder = placeholders[index];
 
-if (dateInputs.length === datePlaceHolders.length) {
-  dateInputs.forEach((input, index) => {
-    const placeholder = datePlaceHolders[index];
-    
-    input.addEventListener('focus', function () {
+    input.addEventListener("focus", function () {
       if (input.showPicker) {
         input.showPicker();
       }
     });
-    
-    input.addEventListener('input', function () {
+
+    input.addEventListener("input", function () {
       if (input.value) {
-        placeholder.style.opacity = '0';
-        placeholder.style.visibility = 'hidden';
+        placeholder.style.opacity = "0";
+        placeholder.style.visibility = "hidden";
       } else {
-        placeholder.style.opacity = '1';
-        placeholder.style.visibility = 'visible';
+        placeholder.style.opacity = "1";
+        placeholder.style.visibility = "visible";
+      }
+    });
+  });
+
+  placeholders.forEach((span, index) => {
+    span.addEventListener("click", (e) => {
+      if (input[index].showPicker) {
+        input[index].showPicker();
+      }
+    });
+  });
+}
+
+if (dateInputs.length === datePlaceHolders.length) {
+  dateInputs.forEach((input, index) => {
+    const placeholder = datePlaceHolders[index];
+
+    input.addEventListener("focus", function () {
+      if (input.showPicker) {
+        input.showPicker();
+      }
+    });
+
+    input.addEventListener("input", function () {
+      if (input.value) {
+        placeholder.style.opacity = "0";
+        placeholder.style.visibility = "hidden";
+      } else {
+        placeholder.style.opacity = "1";
+        placeholder.style.visibility = "visible";
       }
     });
   });
 } else {
-  console.warn('Mismatch between number of date inputs and placeholders.');
+  console.warn("Mismatch between number of date inputs and placeholders.");
 }
 
+// user upload permission file
+const inputFile = document.getElementById("inputpermission");
+const uploadedFileContainer = document.querySelector(".uploaded__file__name");
+const inputFilePlaceHolder = document.querySelector(".file-placeholder");
+const fileNameTetx = document.querySelector(".file__name");
+const fileSize = document.querySelector(".file__size");
 
-  // user upload permission file
-  const inputFile = document.getElementById("inputpermission");
-  const inputFilePlaceHolder = document.querySelector('.file-placeholder');
-  const fileNameTetx = document.querySelector('.file__name');
-  const fileSize = document.querySelector('.file__size');
-
-  if(inputFile){
-    inputFile.addEventListener("change", (e) => {
-      const fileName = e.target.files[0]?.name;  
-      const size = e.target.files[0]?.size;  
-      if (fileName) {
-        if(inputFilePlaceHolder){
-          inputFilePlaceHolder.textContent = fileName;
-        } 
-
-        if(fileNameTetx){
-          fileNameTetx.textContent = fileName;
-          fileSize.textContent = `${(size / (1024 * 1024)).toFixed(2)} MB`;
-        }
+if (inputFile) {
+  inputFile.addEventListener("change", (e) => {
+    const fileName = e.target.files[0]?.name;
+    const size = e.target.files[0]?.size;
+    uploadedFileContainer.classList.add("show");
+    if (fileName) {
+      if (inputFilePlaceHolder) {
+        inputFilePlaceHolder.textContent = fileName;
       }
-    })
-  }
+
+      if (fileNameTetx) {
+        fileNameTetx.textContent = fileName;
+        fileSize.textContent = `${(size / (1024 * 1024)).toFixed(2)} MB`;
+      }
+    }
+  });
+}
 
 //  user make rating
 
-const allRating = document.querySelectorAll('.add-rating .input label');
+const allRating = document.querySelectorAll(".add-rating .input label");
 
-if(allRating){
+if (allRating) {
   allRating.forEach((item, index) => {
-      item.addEventListener("click", (e) => {
-          allRating.forEach((icon, iconIndex) => {
-              if(iconIndex <= index){
-                icon.classList.add("active")
-              }else{
-                icon.classList.remove("active")
-              }
-          })
-      })
-  })
+    item.addEventListener("click", (e) => {
+      allRating.forEach((icon, iconIndex) => {
+        if (iconIndex <= index) {
+          icon.classList.add("active");
+        } else {
+          icon.classList.remove("active");
+        }
+      });
+    });
+  });
 }
-  
 
 // toggle notificationsmenu
 
-const toggleMenuBtn = document.querySelector('.toggle-menu-note');
-const notificationsMenu = document.querySelector('.notifications__menu')
+const toggleMenuBtn = document.querySelector(".toggle-menu-note");
+const notificationsMenu = document.querySelector(".notifications__menu");
 
-if(toggleMenuBtn){
+if (toggleMenuBtn) {
   toggleMenuBtn.addEventListener("click", (e) => {
-    notificationsMenu.classList.toggle('show')
-  })
+    notificationsMenu.classList.toggle("show");
+  });
 }
 
+//custom 2
 
+const inputs = document.querySelectorAll(".code-input");
 
-//custom 2 
-
-
-
-
-
-
-
-const inputs = document.querySelectorAll('.code-input');
-
-if(inputs){
-    inputs.forEach((input, index) => {
-        input.addEventListener('input', function() {
-            if (input.value.length === 1 && index < inputs.length - 1) {
-                inputs[index + 1].focus(); // Focus on the next input
-            }
-        });
-
-        input.addEventListener('keydown', function(event) {
-            if (event.key === 'Backspace' && input.value.length === 0 && index > 0) {
-                inputs[index - 1].focus(); // Focus on the previous input when backspacing
-            }
-        });
+if (inputs) {
+  inputs.forEach((input, index) => {
+    input.addEventListener("input", function () {
+      if (input.value.length === 1 && index < inputs.length - 1) {
+        inputs[index + 1].focus(); // Focus on the next input
+      }
     });
-}
 
+    input.addEventListener("keydown", function (event) {
+      if (event.key === "Backspace" && input.value.length === 0 && index > 0) {
+        inputs[index - 1].focus(); // Focus on the previous input when backspacing
+      }
+    });
+  });
+}
 
 // owl carousel for nav property card
-
-
 
 // amount and precentage
 
 discountType = document.getElementById("discount-type");
 percentage = document.querySelector(".percentage");
 amount = document.querySelector(".amount");
-if(discountType){
-    discountType.addEventListener("change",()=>{
-        if(discountType.value =="percentage"){
-            percentage.style = "display:block"
-            amount.style = "display:none";
-        }
-        else{
-            amount.style = "display:block"
-            percentage.style = "display:none";
-        }
-    })
+if (discountType) {
+  discountType.addEventListener("change", () => {
+    if (discountType.value == "percentage") {
+      percentage.style = "display:block";
+      amount.style = "display:none";
+    } else {
+      amount.style = "display:block";
+      percentage.style = "display:none";
+    }
+  });
 }
-
-
-
 
 //  date input
 const dateInput = document.getElementById("dateInput");
 const calendarIcon = document.getElementById("calendarIcon");
 
-if(dateInput){
-calendarIcon?.addEventListener("click", function () {
-    dateInput.showPicker();  
-    console.log(',c,bv')
+if (dateInput) {
+  calendarIcon?.addEventListener("click", function () {
+    dateInput.showPicker();
+    console.log(",c,bv");
   });
-  
 }

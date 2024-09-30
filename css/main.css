@@ -488,6 +488,7 @@ form button:hover::before,
   font-size: 18px;
   color: var(--primary1);
   transition: 1s;
+  margin-top: 20px;
 }
 
 .property-profile aside .profile-links .add-property:hover {
@@ -525,7 +526,7 @@ form button:hover::before,
   border-radius: 8px;
   padding: 20px;
   color: var(--gray);
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .property-list .list-nav .nav-card .col-lg-6,
@@ -756,6 +757,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .offers-cards-header p {
@@ -1200,14 +1202,17 @@ hr {
   animation-fill-mode: both;
   transition: all 0.3s linear;
   border: 1px solid var(--color-border);
+  display: block;
 }
 
 .product:hover {
-  background-color: var(--color-Primary5);
+  box-shadow: 0 0 15px var(--color-Primary5);
 }
 
-.product:hover a {
-  background-color: var(--color-white);
+.to-chat:hover {
+  background-color: var(--primary1);
+  color: #fff;
+  cursor: pointer;
 }
 .img-product {
   position: relative;
@@ -1916,6 +1921,11 @@ input[type="time"] {
   margin-top: 30px;
   padding: 20px;
   gap: 20px;
+  display: none;
+}
+
+.uploaded__file__name.show {
+  display: flex;
 }
 
 .progress__container {
@@ -1939,7 +1949,7 @@ input[type="time"] {
 
 .progress__file::before {
   content: "";
-  width: 20%;
+  width: 100%;
   height: 100%;
   right: 0;
   top: 0;
@@ -2100,7 +2110,7 @@ section.our__vision {
 .our__vision h2 {
   font-size: 36px;
   color: var(--primary2);
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .our__vision p {
@@ -2119,7 +2129,7 @@ section.our__vision {
 
 .section__img {
   position: relative;
-  width: 400px;
+  width: 100%;
   height: 400px;
   margin-right: auto;
 }
@@ -2747,11 +2757,11 @@ section.blogs {
 }
 
 .retreat__card:hover {
-  background-color: var(--color-Primary5);
+  box-shadow: 0 0 30px var(--color-Primary5);
 }
 
 .retreat__card:hover .retreat__contact {
-  background-color: var(--primary2);
+  background-color: var(--primary1);
 }
 
 .retreat__card:hover .retreat__contact p {
@@ -2984,6 +2994,8 @@ section.blogs {
 
 .retreat__space__title p {
   color: var(--primary2);
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .retreat__space input {
@@ -3007,7 +3019,7 @@ section.blogs {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -4037,10 +4049,6 @@ section.notifications {
   transition: 0.4s;
 }
 
-.rating__card:hover {
-  background-color: var(--color-Primary5);
-}
-
 .rating__card:hover .user__img__profile {
   background-color: #fff;
 }
@@ -4225,7 +4233,7 @@ p.retreat_name span {
 }
 
 .property-list .list-nav .nav-card:hover {
-  background-color: var(--color-Primary5);
+  box-shadow: 0 0 35px var(--color-Primary5);
 }
 
 .property-list .list-nav .nav-card:hover .offers-card-header a {
@@ -4240,6 +4248,8 @@ p.retreat_name span {
   color: var(--color-gray);
   font-size: 20px;
   font-weight: 300;
+  display: block;
+  margin: 5px 0;
 }
 
 .property-profile aside .profile-links .add-property:hover {
@@ -4499,7 +4509,7 @@ form.add-offers-frm {
   border-radius: 50%;
   position: absolute;
   right: 0;
-  bottom: 20px;
+  bottom: 30px;
   background-color: #66f141;
 }
 
@@ -4577,27 +4587,24 @@ section.chat {
   overflow-y: auto;
 }
 
-.all__messages::-webkit-scrollbar-thumb {
-  width: 0;
-}
-
-.all__messages::-webkit-scrollbar-track {
-  width: 0;
-}
-
-.all__messages::-webkit-scrollbar {
-  width: 0;
+.all__messages {
+  scrollbar-width: none !important;
 }
 
 .sended__message {
-  width: 240px;
   background-color: #f5f5f5;
   border-radius: 30px 30px 0 30px;
   padding: 10px 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.sended__message p {
+  max-width: 240px;
   font-size: 20px;
   color: var(--primary1);
   font-weight: 400;
-  margin-bottom: 20px;
+  word-wrap: break-word;
 }
 
 .recieved__message {
@@ -4615,7 +4622,7 @@ section.chat {
 }
 
 .recieved__message p {
-  width: 240px;
+  max-width: 240px;
   background-color: var(--color-Primary5);
   border-radius: 30px 30px 30px 0px;
   padding: 10px 20px;
@@ -4623,6 +4630,7 @@ section.chat {
   color: var(--primary2);
   font-weight: 400;
   margin-bottom: 20px;
+  word-wrap: break-word;
 }
 
 .send__message__input {
@@ -4640,6 +4648,11 @@ section.chat {
   overflow: hidden;
 }
 
+.send__message__input .input form {
+  width: 100%;
+  height: 100%;
+}
+
 .send__message__input .input input {
   width: 100%;
   height: 100%;
@@ -4647,6 +4660,16 @@ section.chat {
   padding-right: 20px;
   font-size: 17px;
   color: var(--gray);
+}
+
+.send__message__input .input img {
+  position: absolute;
+  z-index: 9999;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
 }
 
 .record__message {
@@ -4660,4 +4683,129 @@ section.chat {
   justify-content: center;
   transition: 0.4s;
   border-radius: 50%;
+  position: relative;
+}
+
+.record__message.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px var(--primary1);
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: recording 1s infinite linear;
+}
+
+@keyframes recording {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.recorded {
+  background-color: var(--color-Primary5);
+  border-radius: 30px 30px 30px 0px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: var(--primary2);
+  font-weight: 400;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.msg__wave {
+  width: 240px;
+}
+
+.recorded .icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: var(--primary1);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.recorded__sende__msg {
+  display: flex;
+  gap: 10px;
+}
+
+.recorded__sende__msg .icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: var(--primary1);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.recorded__sende__msg .send__wave__msg {
+  width: 240px;
+  transform: rotate(180deg);
+}
+
+.voice__Message .waveform {
+  width: 240px;
+}
+
+.message__send {
+  width: fit-content;
+}
+
+.voice__Message {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 30px 30px 0 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+  overflow: hidden;
+}
+.play-btn {
+  background-color: #fff;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--primary1);
+}
+
+.border-none {
+  border: none;
+}
+
+.form-switch .form-check-input {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  width: 2em;
+  margin-left: -2.5em;
+  background-image: var(--bs-form-switch-bg);
+  background-position: left center;
+  border-radius: 2em;
+  transition: background-position 0.15s ease-in-out;
+  background-color: var(--color-Primary5) !important;
 }
