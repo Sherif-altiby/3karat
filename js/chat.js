@@ -217,3 +217,11 @@ sendMessage.addEventListener("click", () => {
   const scrollableDiv = document.querySelector(".all__messages");
   scrollableDiv.scrollTop = scrollableDiv.scrollHeight;
 });
+
+// responsive chat
+const toggleChats = document.querySelector(".people_header");
+const allChats = document.querySelector(".people__chats");
+
+toggleChats.addEventListener("click", (e) => {
+  allChats.classList.toggle("show");
+});

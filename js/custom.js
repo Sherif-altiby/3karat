@@ -478,3 +478,7 @@ if (dateInput) {
     console.log(",c,bv");
   });
 }
+
+// chat navigation
+
+const link = document.querySelector(".product .ctm-btn2");

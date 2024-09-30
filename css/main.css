@@ -1249,6 +1249,14 @@ hr {
 .text-product > p {
   color: var(--color-gray);
   margin: 10px 0;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 .address-product {
   font-size: 18px;
@@ -4459,6 +4467,13 @@ form.add-offers-frm {
   padding: 20px;
 }
 
+.people__chats {
+  height: 480px;
+  overflow-y: scroll;
+  scrollbar-width: none !important;
+  transition: 0.4s;
+}
+
 .people_header {
   display: flex;
   align-items: center;
@@ -4481,6 +4496,7 @@ form.add-offers-frm {
   justify-content: space-between;
   padding-bottom: 10px;
   padding-top: 10px;
+  align-items: center;
 }
 
 .message__people:not(:last-child) {
@@ -4490,6 +4506,7 @@ form.add-offers-frm {
 .user__info {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .user__info img {
@@ -4636,6 +4653,7 @@ section.chat {
 .send__message__input {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .send__message__input .input {
@@ -4765,6 +4783,7 @@ section.chat {
 
 .voice__Message .waveform {
   width: 240px;
+  transform: rotate(180deg);
 }
 
 .message__send {

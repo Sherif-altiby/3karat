@@ -213,6 +213,64 @@
     z-index: -1;
     opacity: 0;
   }
+
+  .sended__message p,
+  .recieved__message p {
+    font-size: 16px;
+  }
+
+  .sended__message {
+    padding: 3px 20px;
+  }
+  .recieved__message p {
+    padding: 3px 20px;
+  }
+
+  .recieved__message img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .recorded {
+    padding: 3px 10px;
+  }
+
+  .recorded .icon {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .recorded__sende__msg .icon {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .play-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .voice__Message {
+    padding: 3px 10px;
+  }
+
+  .user__info .text h2 {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+
+  .user__info img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user__info .img::before {
+    bottom: 10px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -574,6 +632,21 @@
   .reset-password .reset-form {
     gap: 40px;
   }
+
+  .record__message {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  .record__message img {
+    width: 20px;
+    height: 15px;
+  }
+
+  .send__message__input .input {
+    height: 40px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -791,6 +864,10 @@
   .make__pagination .nums {
     gap: 5px;
   }
+
+  .chat__content {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 576px) {
@@ -929,6 +1006,30 @@
   .login .login-form .login-links .col,
   .register .register-form .register-links .col {
     padding: 19px 0;
+  }
+
+  .msg__wave {
+    width: 150px;
+  }
+
+  .recorded__sende__msg .send__wave__msg {
+    width: 150px;
+  }
+
+  .voice__Message .waveform {
+    width: 170px;
+  }
+
+  .people__chats {
+    height: 0;
+  }
+
+  .people__chats.show {
+    height: 300px;
+  }
+
+  .people_header {
+    cursor: pointer;
   }
 }
 
