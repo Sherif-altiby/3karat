@@ -501,6 +501,7 @@ form button:hover::before,
   width: fit-content;
   display: flex;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .property-profile .property-list .nav button {

@@ -532,9 +532,6 @@ textarea {
   border-radius: 2px;
 }
 
-
-
-
 :root {
   --primary1: #52b694;
   --primary2: #0e202c;
@@ -612,7 +609,7 @@ input[type="number"]::-webkit-outer-spin-button {
   overflow: hidden;
 }
 
-.frm__btn::before {
+/* .frm__btn::before {
   content: "";
   position: absolute;
   width: 0px;
@@ -622,9 +619,9 @@ input[type="number"]::-webkit-outer-spin-button {
   right: 60%;
   transform: translateX(-60%) rotate(45deg);
   transition: 1s;
-}
+} */
 
-.frm__btn::after {
+/* .frm__btn::after {
   content: "";
   position: absolute;
   width: 0px;
@@ -634,7 +631,7 @@ input[type="number"]::-webkit-outer-spin-button {
   left: 40%;
   transform: translateX(-40%) rotate(45deg);
   transition: 1s;
-}
+} */
 
 .frm__btn p {
   margin: 0;
@@ -668,10 +665,10 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #fff !important;
 }
 
-.frm__btn:hover::after,
+/* .frm__btn:hover::after,
 .frm__btn:hover::before {
   width: 150%;
-}
+} */
 
 .frm__btn p {
   z-index: 9;
@@ -690,7 +687,6 @@ ul {
   border: none;
 }
 
-.btn-user{
+.btn-user {
   cursor: pointer;
 }
-
