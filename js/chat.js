@@ -1,5 +1,4 @@
 // make recieved record waved
-
 const allRecievedAudios = document.querySelectorAll(".msg__wave");
 const allPlayReciedvedBtn = document.querySelectorAll(".recorded .icon");
 const allPlayReciedvedBtnIcons = document.querySelectorAll(".recorded .icon i");
@@ -7,8 +6,8 @@ const allPlayReciedvedBtnIcons = document.querySelectorAll(".recorded .icon i");
 allRecievedAudios.forEach((item, index) => {
   const wavesurfer = WaveSurfer.create({
     container: item,
-    waveColor: "#52B694",
-    progressColor: "#52B6",
+    waveColor: "#0e202c",
+    progressColor: "#0e202c85",
     url: "/data/clap.mp3",
     barWidth: 2,
     barGap: 1,
@@ -50,7 +49,7 @@ allPersonalRecievedAudios.forEach((item, index) => {
   const wavesurfer = WaveSurfer.create({
     container: item,
     waveColor: "#52B694",
-    progressColor: "#52B6",
+    progressColor: "#52b69480",
     url: "/data/clap.mp3",
     barWidth: 2,
     cursorWidth: 0,
@@ -168,7 +167,7 @@ recordBtn.addEventListener("click", async () => {
       let waveSurfer = WaveSurfer.create({
         container: waveformDiv,
         waveColor: "#52B694",
-        progressColor: "#52B6",
+        progressColor: "#52b69480",
         height: 30,
         pixelRatio: 2,
         barWidth: 2,
