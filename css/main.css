@@ -2777,6 +2777,17 @@ section.blogs {
   color: #fff;
 }
 
+.retreat__contact:hover p {
+  color: var(--primary1);
+}
+.ctm-btn:hover.retreat__contact p {
+  color: var(--primary1);
+}
+
+.ctm-btn:hover.retreat__contact img {
+  filter: brightness(1) !important;
+}
+
 .retreat__card:hover .retreat__contact img {
   filter: brightness(11);
 }
