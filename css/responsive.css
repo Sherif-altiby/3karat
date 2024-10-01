@@ -60,12 +60,10 @@
     font-size: 16px;
   }
 
-  /* ahmmmmmmmmmmmmmmmmmmmmmmed */
   .rent-property .rent p {
     font-size: 20px;
   }
 
-  /* ahmmmmmmmmmmmmmmmmmmmmmmed */
   .login .login-header a,
   .register .register-header a,
   .forget-password .forget-password-header a {
@@ -192,15 +190,13 @@
     margin-top: 50px;
   }
 
-  /* Ahmmmmmmmmmmmmmmmed */
   .rent-property .rent p {
     font-size: 14px;
   }
-  /* Ahmmmmmmmmmmmmmmmed */
 
   .notifications__menu {
     position: absolute;
-    top: 128px;
+    top: 150px;
     background-color: #fff;
     padding: 20px;
     display: flex;
@@ -1114,11 +1110,6 @@
     flex-direction: column;
   }
 
-  /* dddddddddddddddddddddddddddddddddd */
-  /* dddddddddddddddddddddddddddddddddd */
-  /* dddddddddddddddddddddddddddddddddd */
-  /* dddddddddddddddddddddddddddddddddd */
-  /* dddddddddddddddddddddddddddddddddd */
   .property-list .list-nav .nav {
     width: 100%;
   }

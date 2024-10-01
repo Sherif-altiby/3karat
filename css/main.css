@@ -3998,7 +3998,7 @@ section.notifications {
 
 .notifications__menu {
   position: absolute;
-  top: 212px;
+  top: 190px;
   background-color: #fff;
   padding: 20px;
   display: flex;
@@ -4839,4 +4839,8 @@ section.chat {
   border-radius: 2em;
   transition: background-position 0.15s ease-in-out;
   background-color: var(--color-Primary5) !important;
+}
+
+.ctm-btn:hover.to-chat {
+  color: var(--color-Primary1);
 }
