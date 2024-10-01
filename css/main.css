@@ -1207,7 +1207,12 @@ hr {
 }
 
 .product:hover {
-  box-shadow: 0 0 15px var(--color-Primary5);
+  box-shadow: 0 0 25px var(--color-Primary5);
+}
+
+.product:hover .to-chat {
+  background-color: var(--primary1);
+  color: #fff;
 }
 
 .to-chat:hover {
