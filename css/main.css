@@ -3434,6 +3434,7 @@ section.retreat__imgs {
 
 .retreat__details__section p {
   font-size: 20px;
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
 }
 
 .retreat__details__section p.desc {
@@ -3639,10 +3640,12 @@ section.retreat__imgs {
   font-size: 23px;
 }
 
-.internal__links a {
+.modal-user-agreement {
   text-decoration: underline !important;
   color: var(--primary1);
   font-size: 20px;
+  background: none;
+  border: none;
 }
 
 .opinion {
@@ -3660,13 +3663,17 @@ section.retreat__imgs {
 }
 
 .opinion .img {
-  width: 100px;
+  width: 50px;
   height: 50px;
   background-color: var(--color-Primary5);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+.opinion__text {
+  flex: 1;
 }
 
 .opinion .img img {
@@ -4848,4 +4855,8 @@ section.chat {
 
 .ctm-btn:hover.to-chat {
   color: var(--color-Primary1);
+}
+
+.ctm-btn2.ctm-btn {
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
 }

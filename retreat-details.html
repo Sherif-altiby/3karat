@@ -460,7 +460,13 @@
               </form>
             </div>
             <div data-aos="fade-right" class="internal__links">
-              <a href="#"> اتفاقية المستخدم </a>
+              <button
+                class="modal-user-agreement"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                اتفاقية المستخدم
+              </button>
             </div>
           </div>
         </div>
@@ -760,6 +766,28 @@
       <a href="/contactus.html"> تواصل معنا </a>
       <a href="/log-out.html" class="log"> <span> - </span> تسجيل الخروج </a>
     </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
