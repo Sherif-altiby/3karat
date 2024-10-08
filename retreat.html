@@ -740,8 +740,8 @@
             <div class="range__vlue">
               <!-- <p data-range="200" class="data__range">200 ريال</p> -->
               <!-- <p data-range="1000" class="data__range">1000 ريال</p> -->
-              <input class="data__range" disabled type="text" value="200" />
-              <input class="data__range" disabled type="text" value="1000" />
+              <input class="data__range" type="text" data-range="200" />
+              <input class="data__range" type="text" data-range="1000" />
             </div>
             <div id="main_slider"></div>
             <div class="range__vlue__text">
@@ -755,8 +755,8 @@
               <p>المساحة</p>
             </div>
             <div class="range__vlue">
-              <input class="data__range" disabled type="text" value="200" />
-              <input class="data__range" disabled type="text" value="1000" />
+              <input class="data__range" type="text" data-range="200" />
+              <input class="data__range" type="text" data-range="1000" />
             </div>
             <div id="main_slider_two"></div>
             <div class="range__vlue__text">
@@ -934,11 +934,11 @@
     <script>
       const rangeValues = document.querySelectorAll(".range__vlue input");
 
-      const startValueOne = Number(rangeValues[0].value);
-      const endValueOne = Number(rangeValues[1].value);
+      const startValueOne = Number(rangeValues[0].getAttribute("data-range"));
+      const endValueOne = Number(rangeValues[1].getAttribute("data-range"));
 
-      const startValueTwo = Number(rangeValues[2].value);
-      const endValueTwo = Number(rangeValues[3].value);
+      const startValueTwo = Number(rangeValues[2].getAttribute("data-range"));
+      const endValueTwo = Number(rangeValues[3].getAttribute("data-range"));
 
       var slider = document.getElementById("main_slider");
       var sliderTwo = document.getElementById("main_slider_two");
@@ -956,6 +956,9 @@
       slider.noUiSlider.on("update", function (values) {
         rangeValues[0].value = `${Math.floor(values[0])} ريال`;
         rangeValues[1].value = `${Math.floor(values[1])} ريال`;
+
+        rangeValues[0].setAttribute("value", `${Math.floor(values[0])}`);
+        rangeValues[1].setAttribute("value", `${Math.floor(values[1])}`);
       });
 
       noUiSlider.create(sliderTwo, {
@@ -971,6 +974,9 @@
       sliderTwo.noUiSlider.on("update", function (values) {
         rangeValues[2].value = `${Math.floor(values[0])} م`;
         rangeValues[3].value = `${Math.floor(values[1])} م`;
+
+        rangeValues[2].setAttribute("value", `${Math.floor(values[0])}`);
+        rangeValues[3].setAttribute("value", `${Math.floor(values[1])}`);
       });
     </script>
   </body>
