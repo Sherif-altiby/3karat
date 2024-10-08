@@ -4437,6 +4437,10 @@ form.add-offers-frm {
 .data__range {
   font-weight: 500 !important;
   color: var(--primary2) !important;
+  width: 100px;
+  border: none;
+  outline: none;
+  background-color: #fff;
 }
 
 #slider-customer .owl-nav {
