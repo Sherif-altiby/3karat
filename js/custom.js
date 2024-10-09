@@ -294,25 +294,42 @@ AOS.init({
   once: true,
 });
 
-//  user image change
-const fileInputs = document.querySelectorAll(
-  ".upload__img__container .add__photo input"
-);
-const selectedImages = document.querySelectorAll(
-  ".upload__img__container .add__photo img"
+const fileInput = document.querySelector(
+  ".add__property form input[type='file']"
 );
 
-if (fileInputs) {
-  fileInputs.forEach((input, index) => {
-    input.addEventListener("change", function (event) {
-      const file = event.target.files[0];
+const imagesContainer = document.querySelector(".upload__img__container");
 
-      if (file && file.type.startsWith("image/")) {
-        selectedImages[index].src = URL.createObjectURL(file);
-      }
-    });
-  });
-}
+fileInput.addEventListener("change", function (event) {
+  const file = event.target.files[0];
+
+  if (file && file.type.startsWith("image/")) {
+    // Create the add__photo div
+    const addPhotoDiv = document.createElement("div");
+    addPhotoDiv.classList.add("add__photo");
+
+    // Create the label element
+    const label = document.createElement("label");
+
+    // Create the img element and set the src
+    const img = document.createElement("img");
+    img.src = URL.createObjectURL(file);
+    img.alt = ""; // You can add any alt text if needed
+
+    // Append img to label, label to addPhotoDiv, and addPhotoDiv to uploadImgContainer
+    label.appendChild(img);
+    addPhotoDiv.appendChild(label);
+
+    // Finally, append the entire uploadImgContainer to imagesContainer
+    imagesContainer.insertBefore(addPhotoDiv, imagesContainer.firstChild);
+
+    console.log("first");
+    console.log(uploadImgContainer);
+    console.log(imagesContainer);
+  } else {
+    console.log("second");
+  }
+});
 
 // user choose time
 const timeInputs = document.querySelectorAll(".timeInput");
