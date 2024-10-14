@@ -32,6 +32,10 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
 
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
@@ -431,9 +435,9 @@
                   <div class="date-placeholder">18/08/2024</div>
                 </div>
 
-                <label for="arrive"> تاريخ المغادرة </label>
+                <label for="go"> تاريخ المغادرة </label>
                 <div class="input">
-                  <input id="arrive" type="date" placeholder=" 18/08/2024" />
+                  <input id="go" type="date" placeholder=" 18/08/2024" />
                   <div class="icon">
                     <img src="./images/calendar-2.png" alt="" />
                   </div>
@@ -857,6 +861,29 @@
           });
         });
       });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      const firstDateInput = document.querySelector(".arrive__card input"); // Select the first input
+      const firstDatePlaceholder = document.querySelector(".date-placeholder"); // Select the first placeholder
+
+      if (firstDateInput && firstDatePlaceholder) {
+        firstDateInput.addEventListener("click", function () {
+          firstDateInput.focus();
+          firstDateInput.showPicker(); // Show the picker when clicked
+        });
+
+        firstDateInput.addEventListener("input", function () {
+          if (firstDateInput.value) {
+            firstDatePlaceholder.style.opacity = "0";
+            firstDatePlaceholder.style.visibility = "hidden";
+          } else {
+            firstDatePlaceholder.style.opacity = "1";
+            firstDatePlaceholder.style.visibility = "visible";
+          }
+        });
+      }
     </script>
   </body>
 </html>

@@ -294,49 +294,45 @@ AOS.init({
   once: true,
 });
 
+// user upload images
+
 const fileInput = document.querySelector(
   ".add__property form input[type='file']"
 );
 
 const imagesContainer = document.querySelector(".upload__img__container");
 
-fileInput.addEventListener("change", function (event) {
-  const file = event.target.files[0];
+if (fileInput) {
+  fileInput.addEventListener("change", function (event) {
+    const file = event.target.files[0];
 
-  if (file && file.type.startsWith("image/")) {
-    // Create the add__photo div
-    const addPhotoDiv = document.createElement("div");
-    addPhotoDiv.classList.add("add__photo");
+    if (file && file.type.startsWith("image/")) {
+      const addPhotoDiv = document.createElement("div");
+      addPhotoDiv.classList.add("add__photo");
 
-    // Create the label element
-    const label = document.createElement("label");
+      const label = document.createElement("label");
 
-    // Create the img element and set the src
-    const img = document.createElement("img");
-    img.src = URL.createObjectURL(file);
-    img.alt = ""; // You can add any alt text if needed
+      const img = document.createElement("img");
+      img.src = URL.createObjectURL(file);
+      img.alt = "";
 
-    // Append img to label, label to addPhotoDiv, and addPhotoDiv to uploadImgContainer
-    label.appendChild(img);
-    addPhotoDiv.appendChild(label);
+      label.appendChild(img);
+      addPhotoDiv.appendChild(label);
 
-    // Finally, append the entire uploadImgContainer to imagesContainer
-    imagesContainer.insertBefore(addPhotoDiv, imagesContainer.firstChild);
+      imagesContainer.insertBefore(addPhotoDiv, imagesContainer.firstChild);
 
-    console.log("first");
-    console.log(uploadImgContainer);
-    console.log(imagesContainer);
-  } else {
-    console.log("second");
-  }
-});
+      console.log("first");
+      console.log(uploadImgContainer);
+      console.log(imagesContainer);
+    } else {
+      console.log("second");
+    }
+  });
+}
 
 // user choose time
 const timeInputs = document.querySelectorAll(".timeInput");
 const placeholders = document.querySelectorAll(".time-placeholder");
-
-const dateInputs = document.querySelectorAll(".arrive__card input");
-const datePlaceHolders = document.querySelectorAll(".date-placeholder");
 
 if (timeInputs) {
   timeInputs.forEach((input, index) => {
@@ -368,29 +364,38 @@ if (timeInputs) {
   });
 }
 
-if (dateInputs.length === datePlaceHolders.length) {
-  dateInputs.forEach((input, index) => {
-    const placeholder = datePlaceHolders[index];
+// if (dateInputs.length >= 2) {
+//   // Initialize flatpickr on both inputs
+//   flatpickr(dateInputs[0], {
+//     enableTime: true, // Enables time selection
+//     dateFormat: "Y-m-d H:i", // Format for date and time
+//     onChange: function (selectedDates, dateStr, instance) {
+//       const selectedDate = selectedDates[0];
 
-    input.addEventListener("focus", function () {
-      if (input.showPicker) {
-        input.showPicker();
-      }
-    });
+//       // Set the minimum date for the next input to the selected date
+//       flatpickr(dateInputs[1], {
+//         enableTime: true,
+//         dateFormat: "Y-m-d H:i",
+//         minDate: selectedDate, // Disable all previous dates
+//         onChange: function (selectedDates, dateStr, instance) {
+//           const selectedTime = selectedDates[0];
 
-    input.addEventListener("input", function () {
-      if (input.value) {
-        placeholder.style.opacity = "0";
-        placeholder.style.visibility = "hidden";
-      } else {
-        placeholder.style.opacity = "1";
-        placeholder.style.visibility = "visible";
-      }
-    });
-  });
-} else {
-  console.warn("Mismatch between number of date inputs and placeholders.");
-}
+//           // You can implement any logic if needed for time-related constraints here
+//         },
+//         // Optionally disable time before the selected time in the first input
+//         onOpen: function (selectedDates, dateStr, instance) {
+//           // Disable times before the selected time on the same day
+//           if (
+//             selectedDates.length &&
+//             selectedDate.toDateString() === selectedDates[0].toDateString()
+//           ) {
+//             instance.set("minTime", selectedDate.toTimeString().slice(0, 5)); // Example: disabling times before the selected time
+//           }
+//         },
+//       });
+//     },
+//   });
+// }
 
 // user upload permission file
 const inputFile = document.getElementById("inputpermission");

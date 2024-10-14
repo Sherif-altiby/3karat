@@ -4177,6 +4177,7 @@ p.retreat_name span {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .paymen-user-way-add p:nth-child(1) {
@@ -4904,4 +4905,35 @@ section.chat {
   z-index: 999;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* 
+  #########################################
+  #########################################
+  #########################################
+  #########################################
+  #########################################
+*/
+
+.paymen-user-way-add-name {
+  padding: 0px 20px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.paymen-user-way-add-name p {
+  color: #000;
+}
+
+.payment-name-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary2);
+  padding-bottom: 10px;
+}
+
+.payment-name-info .frm__btn {
+  width: 120px;
 }
